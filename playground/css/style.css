@@ -63,44 +63,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 7, ../sass/style.scss */
 section {
-  width: 100%;
-  height: 200px;
   display: block;
+  height: 200px;
+  width: 100%;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .ribbon-container {
-  background: grey;
+  background: green;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .choices {
-  background: red;
+  background: orange;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .ribbon {
-  width: 30px;
-  height: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   background: white;
+  cursor: pointer;
+  height: 30px;
   text-align: center;
+  width: 30px;
+  z-index: 5;
+}
+/* line 29, ../sass/style.scss */
+.ribbon:hover {
+  opacity: 0.8;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
+.second {
+  margin-left: 50px;
+}
+
+/* line 42, ../sass/style.scss */
+.third {
+  margin-left: 100px;
+}
+
+/* line 46, ../sass/style.scss */
 .magnet-area {
-  width: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: teal;
   height: 60px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
   margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+}
+
+/* line 56, ../sass/style.scss */
+.choices {
+  position: absolute;
 }

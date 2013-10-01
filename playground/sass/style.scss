@@ -1,46 +1,58 @@
 @import "compass/reset";
 @import "compass/css3";
 
+// VARS
+$ribbon-size: 30px;
+
 section {
-	width: 100%;
-	height: 200px;
 	display: block; 
+	height: 200px;
+	width: 100%;
 }
 
 .ribbon-container {
-	background: grey;
+	background: green;
 }
 
 .choices {
-	background: red;
+	background: orange;
 }
 
-$ribbon-size: 30px;
-
 .ribbon {
-	width: $ribbon-size;
-	height: $ribbon-size;
 	@include border-radius(50%);
 	background: white;
+	cursor: pointer;
+	height: $ribbon-size;
 	text-align: center;
-	// &:after {
-	// 	content: "";
-	// 	height: 50px;
-	// 	width: 20px;
-	// 	background-color: white;
-	// 	position: absolute;
-	// 	top: 20px;
-	// }
+	width: $ribbon-size;
+	z-index: 5;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.first {
+
+}
+
+.second {
+	margin-left: 50px;
+}
+
+.third {
+	margin-left: 100px;
 }
 
 .magnet-area {
-	width: $ribbon-size*2;
+	@include border-radius(50%);
+	background: teal;
 	height: $ribbon-size*2;
-	@include border-radius;
-	
 	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: $ribbon-size*2;
 }
 
-.choice {
-	
+.choices {
+	position: absolute;
 }
