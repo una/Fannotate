@@ -1,0 +1,26 @@
+section {
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow:hidden;
+    background: green;
+	border: 1px solid red;
+}
+
+section.left {
+	right: 100%;
+	&.pulled {
+		right: 0;
+	}
+}
+
+section.right {
+	@include transition-duration(1s);
+	background: pink;
+	left: 100%;
+	&.pulled {
+		left: 50%;
+	}
+}

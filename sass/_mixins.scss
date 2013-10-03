@@ -1,0 +1,37 @@
+@mixin keyframes($name) {
+  @-o-keyframes $name { @content };
+  @-moz-keyframes $name { @content };
+  @-webkit-keyframes $name { @content }; 
+  @-keyframes $name { @content };
+}
+
+@mixin animation-name($name...) {
+  -o-animation-name: $name;
+  -moz-animation-name: $name;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+@mixin animation-duration($duration...) {
+  -o-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+}
+@mixin animation($animation...) {
+  -o-animation: $animation;
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+  animation: $animation;
+}
+@mixin animation-direction($animation-direction...) {
+  -o-animation-direction: $animation-direction;
+  -moz-animation-direction: $animation-direction;
+  -webkit-animation-direction: $animation-direction;
+  animation-direction: $animation-direction;
+}
+@mixin timing-function($timing-function...) {
+  -o-timing-function: $timing-function;
+  -moz-timing-function: $timing-function;
+  -webkit-timing-function: $timing-function;
+  timing-function: $timing-function;
+}

@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 1, ../sass/_base.scss */
 section {
   position: absolute;
   top: 0;
@@ -75,25 +75,25 @@ section {
   border: 1px solid red;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 12, ../sass/_base.scss */
 section.left {
-  left: 100%;
-}
-/* line 54, ../sass/style.scss */
-section.left.pulled {
-  left: 0;
-}
-
-/* line 59, ../sass/style.scss */
-section.right {
-  -o-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  background: pink;
   right: 100%;
 }
-/* line 63, ../sass/style.scss */
-section.right.pulled {
+/* line 14, ../sass/_base.scss */
+section.left.pulled {
   right: 0;
+}
+
+/* line 19, ../sass/_base.scss */
+section.right {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  background: pink;
+  left: 100%;
+}
+/* line 23, ../sass/_base.scss */
+section.right.pulled {
+  left: 50%;
 }
