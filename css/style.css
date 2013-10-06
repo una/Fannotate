@@ -87,20 +87,13 @@ section[data-role="page"] {
 }
 
 /* line 1, ../sass/_header.scss */
-div[data-role="header"] {
+nav[data-role="header"] {
   z-index: 2;
-  height: 40px;
+  height: 30pt;
   background: teal;
   width: 100%;
   display: block;
   position: absolute;
-}
-/* line 9, ../sass/_header.scss */
-div[data-role="header"] a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  float: left;
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -139,4 +132,9 @@ div[data-role="header"] a {
 /* line 1, ../sass/_animations.scss */
 .shaking {
   background-color: red !important;
+}
+
+/* line 1, ../sass/_settings.scss */
+#settings {
+  background: orange;
 }
