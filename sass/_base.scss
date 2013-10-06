@@ -17,10 +17,3 @@ section[data-role="page"] {
 	float: left;
 	background: green;
 }
-
-.left {
-	right: 100%;
-	&.pulled {
-		right: 0;
-	}
-}
