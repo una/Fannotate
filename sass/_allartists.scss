@@ -5,10 +5,10 @@
 	background-color: yellowgreen;
 	display: block;
 	float: left;
-	height: 60pt;
+	height: 65pt;
 	margin: 5pt;
 	position: relative;
-	width: 60pt;
+	width: 65pt;
 }
 
 .artist-thumb {
@@ -17,11 +17,13 @@
 }
 
 .artist-name {
-	background: black;
+	background: rgba(255,54,14,0.8);
 	bottom: 0;
-	height: 15pt;
 	text-align: center;
 	left: 0;
 	position: absolute;
-	width:100%;
+	width: 90%;
+	color: white;
+	font-size: 7.5pt;
+	padding: 0.5em 5%;
 }

@@ -1,13 +1,7 @@
 html, body {
 	height: 100%;
 	overflow: hidden;
-}
-
-.container {
-	position: absolute;
-	width: 200%;
-	height: 100%;
-	margin-left: -100%;
+	@extend %text-light;
 }
 
 section[data-role="page"] {
@@ -17,3 +11,15 @@ section[data-role="page"] {
 	float: left;
 	background: green;
 }
+
+/* content area */
+.ui-content { 
+	border-width: 0; 
+	overflow: visible; 
+	overflow-x: hidden; 
+	padding: 5pt; 
+}
+
+#all-artists .ui-content{
+		padding: 5pt 0 5pt 5pt; 
+	}
