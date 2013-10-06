@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">    
-	<title>OpenNote App</title>
+	<title>Fanotate!</title>
 
 	<!-- MOBILE SETTINGS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
@@ -33,22 +33,40 @@
 </head>
 
 <body>
-	<section class="settings-page left">
-		Edit your settings k?
-	</section>
+	<div class="container">
+		
 
-	<section class="all-artists" style="background: pink">
-		<h1> This is our cool app! </h1>
-		<p> the artists page </p>
-	</section>
+		
 
-	<section class="single-artist" style="background: red ">
-		<section class="individual-entry audio">
-			<h1>This is an individual entry</h1>
+		
+
+		<section data-role="page" id="single-artist" style="background: red">
+			<div data-role="panel" class="entry-nav right" data-position="right" data-display="push"  id="entry-nav">
+				<p>this is like, what other samples there are. woah, coolzies.</p>
+			</div>
+
+			<nav data-role="header" role="navigation">
+				<a href="#" class="back artists">Back</a>
+				<a href="#entry-nav" class="entry-nav-btn">More</a>
+			</nav>
+			<div class="individual-entry audio">
+				<h1>This is an individual entry</h1>
+			</div>
 		</section>
-		<section class="entry-nav right">
+	</div>
+
+
+	<section data-role="page" id="all-artists" style="background: pink">
+			<nav data-role="header" role="navigation">
+				<a href="#settings" class="back artists">Back</a>
+				<a href="#single-artist" class="entry-nav-btn">Edit</a>
+			</nav>
+			<h1> This is our cool app! </h1>
+			<p> the artists page </p>
+
+		<div data-role="panel" class="settings left" data-position="left" data-display="push"  id="settings">
 			<p>this is like, what other samples there are. woah, coolzies.</p>
-		</section>
+		</div>
 	</section>
 
 	<!-- js -->

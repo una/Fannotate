@@ -3,29 +3,24 @@ html, body {
 	overflow: hidden;
 }
 
-section {
- position: absolute;
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;
-	overflow: hidden;
-	background: green;
-	border: 1px solid red;
+.container {
+	position: absolute;
+	width: 200%;
+	height: 100%;
+	margin-left: -100%;
 }
 
-section.left {
+section[data-role="page"] {
+ 	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background: green;
+}
+
+.left {
 	right: 100%;
 	&.pulled {
 		right: 0;
-	}
-}
-
-section.right {
-	@include transition-duration(1s);
-	background: pink;
-	left: 100%;
-	&.pulled {
-		left: 50%;
 	}
 }

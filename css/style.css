@@ -64,36 +64,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../sass/_base.scss */
-section {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+html, body {
+  height: 100%;
   overflow: hidden;
-  background: green;
-  border: 1px solid red;
 }
 
-/* line 12, ../sass/_base.scss */
-section.left {
+/* line 6, ../sass/_base.scss */
+.container {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  margin-left: -100%;
+}
+
+/* line 13, ../sass/_base.scss */
+section[data-role="page"] {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: green;
+}
+
+/* line 21, ../sass/_base.scss */
+.left {
   right: 100%;
 }
-/* line 14, ../sass/_base.scss */
-section.left.pulled {
+/* line 23, ../sass/_base.scss */
+.left.pulled {
   right: 0;
 }
 
-/* line 19, ../sass/_base.scss */
-section.right {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  background: pink;
-  left: 100%;
+/* line 1, ../sass/_header.scss */
+.header {
+  z-index: 2;
+  height: 40px;
+  background: teal;
+  width: 100%;
+  display: block;
+  position: absolute;
 }
-/* line 23, ../sass/_base.scss */
-section.right.pulled {
-  left: 50%;
+/* line 9, ../sass/_header.scss */
+.header a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+/* line 1, ../sass/_sidebar.scss */
+.entry-nav {
+  background: pink;
 }
