@@ -13,7 +13,7 @@ $(function(){
 		}
 		else {
 		$(".all-thumbs").sortable('enable');
-		// $( ".all-thumbs" ).disableSelection();
+		$( ".all-thumbs" ).disableSelection();
 		$(".all-thumbs li").addClass('shaking');
 		onSort = true;
 	 	}
