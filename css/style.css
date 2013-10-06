@@ -130,7 +130,13 @@ div[data-role="header"] a {
   background: black;
   bottom: 0;
   height: 15pt;
+  text-align: center;
   left: 0;
   position: absolute;
   width: 100%;
+}
+
+/* line 1, ../sass/_animations.scss */
+.shaking {
+  background-color: red !important;
 }
