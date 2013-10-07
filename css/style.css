@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 7, ../sass/_variables.scss */
+/* line 10, ../sass/_variables.scss */
 #all-artists {
   background: #3a2538;
   /* Old browsers */
@@ -156,10 +156,10 @@ nav[data-role="header"] a {
   background-color: yellowgreen;
   display: block;
   float: left;
-  height: 70pt;
+  height: 67pt;
   margin: 5pt;
   position: relative;
-  width: 70pt;
+  width: 67pt;
 }
 
 /* line 15, ../sass/_allartists.scss */
