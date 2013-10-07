@@ -39,10 +39,32 @@
 <section data-role="page" id="single-artist" data-transition="slide">
 	
 	<div data-role="panel" data-position="right" data-display="push" id="entry-nav">
-		<nav data-role="header" role="navigation">
-			<a href="#entry-nav">Done</a>
-			<h1> Back </h1>
-		</nav>
+		  <div data-role="collapsible" data-collapsed="false">
+			<h3>Active Entries</h3>
+			<ul class="active-entries">
+				<li><a href="#">Special Edition Vinyl Covers</a></li>
+				<li><a href="#">"Science/Visions" [Chorus Round 2]</a></li>
+				<li><a href="#">"Science/Visions" [Verse 2]</a></li>
+				<li><a href="#">2014 Euro Tour Shirt Design </a></li>
+				<li><a href="#">"We Sink" Album Artwork</a></li>
+				<li><a href="#">Web Fan Exclusive T-Shirt Design</a></li>
+				<li><a href="#">"Night Sky" [Bridge]</a></li>
+				<li><a href="#">Lies [Verse 3]</a></li>
+				<li><a href="#">2014 Euro Tour Poster</a></li>
+			</ul>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>Past Winners</h3>
+			<ul class="past-winners">
+				<li><a href="#">2013 US Tour Special Edition Poster</a></li>
+				<li><a href="#">2013 US Tour Shirt Design </a></li>
+				<li><a href="#">"Make It Rain" Album Artwork</a></li>
+				<li><a href="#">"Love and Water" [Intro]</a></li>
+				<li><a href="#">"Science/Visions" [Chorus]</a></li>
+				<li><a href="#">2013 West Coast Poster</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<nav data-role="header" role="navigation">
@@ -52,7 +74,40 @@
 	</nav>
 
 	<div data-role="content" class="individual-entry audio">
-		<h1>This is an individual entry</h1>
+		<h1 class="callout">Help Us Choose</h1>
+		<h2 class="instruction">Drag the medals to rank your favorite clips</h2>
+
+		<ul class="sample-options audio">
+			<li class="audio-option">
+				<div class="radial">
+					<div class="medal-stand"></div>
+				</div>
+
+				<h3 class="sample-name"> "Science/Visions" [Chorus] v.1 </h3>
+				
+				<div class="audio-controls">
+					
+				</div>
+			</li>
+			<li class="audio-option">
+				
+			</li>
+			<li class="audio-option">
+				
+			</li>
+		</ul>
+		<nav class="audio-option-nav">
+			
+		</nav>
+		
+		<div class="all-medals">
+			
+		</div>
+		<div class="submit-vote">
+			<a href="#" class="submit-btn">
+				SUBMIT
+			</a>
+		</div>
 	</div>
 
 </section>
@@ -75,7 +130,7 @@
 		<input type="checkbox" name="artist" value="Jeremy Messersmith">Jeremy Messersmith</input><br>
 		<input type="checkbox" name="artist" value="Justin Nozuka">Justin Nozuka</input><br>		
 		<input type="checkbox" name="artist" value="Tiny Green Cars">Tiny Green Cars</input><br>
-		<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons</input><br>		
+		<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons</input><br>
 		<input type="checkbox" name="artist" value="Pheonix">Pheonix</input><br>
 		<input type="checkbox" name="artist" value="Robert Delong">Robert Delong</input><br> 		
 		<input type="checkbox" name="artist" value="Two Door Cinema Club">Two Door Cinema Club</input><br>

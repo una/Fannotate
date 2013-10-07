@@ -156,10 +156,10 @@ nav[data-role="header"] a {
   background-color: yellowgreen;
   display: block;
   float: left;
-  height: 65pt;
+  height: 70pt;
   margin: 5pt;
   position: relative;
-  width: 65pt;
+  width: 70pt;
 }
 
 /* line 15, ../sass/_allartists.scss */
@@ -374,4 +374,9 @@ nav[data-role="header"] a {
 /* line 9, ../sass/_settings.scss */
 .ui-checkbox {
   display: inline;
+}
+
+/* line 1, ../sass/_audioentry.scss */
+.submit-vote {
+  display: none;
 }
