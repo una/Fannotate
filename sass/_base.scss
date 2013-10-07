@@ -10,6 +10,13 @@ section[data-role="page"] {
 	height: 100%;
 	float: left;
 	background: green;
+	
+	.ui-title {
+		margin: auto;
+		padding: 0.6em;
+		font-size: 12pt;
+		color: white;
+	}
 }
 
 /* content area */
@@ -23,3 +30,8 @@ section[data-role="page"] {
 #all-artists .ui-content{
 		padding: 5pt 0 5pt 5pt; 
 	}
+
+.right {
+	float: right;
+	right: 0;
+}

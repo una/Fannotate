@@ -1,1 +1,15 @@
+// COLORS
 $accent-red: #ff360e; //255, 54, 14
+$black: #0d0d0d; // 13, 13 ,13
+$home-bg-grad-center: #3a2538; //original: #2f1e2d
+
+//BACKGROUNDS
+%home-gradient {
+	background: $home-bg-grad-center; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  $home-bg-grad-center 0%, $black 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$home-bg-grad-center), color-stop(100%,$black)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  $home-bg-grad-center 0%,$black 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  $home-bg-grad-center 0%,$black 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  $home-bg-grad-center 0%,$black 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  $home-bg-grad-center 0%,$black 100%); /* W3C */
+	}

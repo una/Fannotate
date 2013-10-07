@@ -39,12 +39,16 @@
 <section data-role="page" id="single-artist" data-transition="slide">
 	
 	<div data-role="panel" data-position="right" data-display="push" id="entry-nav">
-		<p>this is like, what other samples there are. woah, coolzies.</p>
+		<nav data-role="header" role="navigation">
+			<a href="#entry-nav">Done</a>
+			<h1> Back </h1>
+		</nav>
 	</div>
 
 	<nav data-role="header" role="navigation">
 		<a href="#all-artists" data-transition="slide" data-direction="reverse">Back</a>
 		<a href="#entry-nav">More</a>
+		<h1> CHVRCHES </h1>
 	</nav>
 
 	<div data-role="content" class="individual-entry audio">
@@ -57,12 +61,34 @@
 <section data-role="page" id="all-artists">
 
 	<div data-role="panel" data-position="left" data-display="push" id="settings">
-		<p>this is like, what other samples there are. woah, coolzies.</p>
+		<nav data-role="header" role="navigation">
+			<a href=""></a> <!--fake a -->
+			<a href="#settings">Done</a>
+			<h1> Edit Settings </h1>
+		</nav>
+
+		<form>
+		<input type="checkbox" name="artist" value="Childish Gambino">Childish Gambino</input><br>
+		<input type="checkbox" name="artist" value="CHVRCHES">CHVRCHES</input><br>		
+		<input type="checkbox" name="artist" value="Daughters">Daughters</input><br>
+		<input type="checkbox" name="artist" value="Foy Vance">Foy Vance</input><br>		
+		<input type="checkbox" name="artist" value="Jeremy Messersmith">Jeremy Messersmith</input><br>
+		<input type="checkbox" name="artist" value="Justin Nozuka">Justin Nozuka</input><br>		
+		<input type="checkbox" name="artist" value="Tiny Green Cars">Tiny Green Cars</input><br>
+		<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons</input><br>		
+		<input type="checkbox" name="artist" value="Pheonix">Pheonix</input><br>
+		<input type="checkbox" name="artist" value="Robert Delong">Robert Delong</input><br> 		
+		<input type="checkbox" name="artist" value="Two Door Cinema Club">Two Door Cinema Club</input><br>
+		<input type="checkbox" name="artist" value="Temper Trap">Temper Trap</input><br> 
+		</form>
+
+
 	</div>
 
 	<nav data-role="header" role="navigation">
 		<a href="#settings">Settings</a>
-		<a href="#" class="sortToggle">Edit Order</a>
+		<a href="#" class="sortToggle">Reorder</a>
+		<h1> Fannotate </h1>
 	</nav>
 
 	<div data-role="content">
@@ -112,7 +138,7 @@
 			<li>
 				<a href="#single-artist" data-transition="slide">
 					<figure class="artist-thumb"></figure>
-					<figcaption class="artist-name">Mumford & Sons</figcaption>	
+					<figcaption class="artist-name">Mumford &amp; Sons</figcaption>	
 				</a>
 			</li>
 			<li>

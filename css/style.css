@@ -63,6 +63,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 7, ../sass/_variables.scss */
+#all-artists {
+  background: #3a2538;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #3a2538 0%, #0d0d0d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3a2538), color-stop(100%, #0d0d0d));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #3a2538 0%, #0d0d0d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #3a2538 0%, #0d0d0d 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #3a2538 0%, #0d0d0d 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #3a2538 0%, #0d0d0d 100%);
+  /* W3C */
+}
+
 /* line 1, ../sass/_typography.scss */
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -83,9 +101,16 @@ section[data-role="page"] {
   float: left;
   background: green;
 }
+/* line 14, ../sass/_base.scss */
+section[data-role="page"] .ui-title {
+  margin: auto;
+  padding: 0.6em;
+  font-size: 12pt;
+  color: white;
+}
 
 /* content area */
-/* line 16, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 .ui-content {
   border-width: 0;
   overflow: visible;
@@ -93,19 +118,32 @@ section[data-role="page"] {
   padding: 5pt;
 }
 
-/* line 23, ../sass/_base.scss */
+/* line 30, ../sass/_base.scss */
 #all-artists .ui-content {
   padding: 5pt 0 5pt 5pt;
+}
+
+/* line 34, ../sass/_base.scss */
+.right {
+  float: right;
+  right: 0;
 }
 
 /* line 1, ../sass/_header.scss */
 nav[data-role="header"] {
   z-index: 2;
   height: 30pt;
-  background: teal;
+  background: #0d0d0d;
   width: 100%;
   display: block;
   position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 11, ../sass/_header.scss */
+nav[data-role="header"] a {
+  text-decoration: none;
+  color: #ff360e;
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -113,7 +151,7 @@ nav[data-role="header"] {
   background: pink;
 }
 
-/* line 4, ../sass/_allartists.scss */
+/* line 5, ../sass/_allartists.scss */
 .all-thumbs li {
   background-color: yellowgreen;
   display: block;
@@ -124,13 +162,13 @@ nav[data-role="header"] {
   width: 65pt;
 }
 
-/* line 14, ../sass/_allartists.scss */
+/* line 15, ../sass/_allartists.scss */
 .artist-thumb {
   width: 100%;
   height: 100%;
 }
 
-/* line 19, ../sass/_allartists.scss */
+/* line 20, ../sass/_allartists.scss */
 .artist-name {
   background: rgba(255, 54, 14, 0.8);
   bottom: 0;
@@ -331,4 +369,9 @@ nav[data-role="header"] {
 /* line 1, ../sass/_settings.scss */
 #settings {
   background: orange;
+}
+
+/* line 9, ../sass/_settings.scss */
+.ui-checkbox {
+  display: inline;
 }
