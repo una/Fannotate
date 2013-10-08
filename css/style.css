@@ -184,185 +184,77 @@ nav[data-role="header"] a {
 /* line 1, ../sass/_animations.scss */
 .shaking {
   opacity: 0.9;
-  -o-animation: shakeIt 0.2s infinite;
-  -moz-animation: shakeIt 0.2s infinite;
-  -webkit-animation: shakeIt 0.2s infinite;
-  animation: shakeIt 0.2s infinite;
+  -o-animation: Opacity 1.5s infinite;
+  -moz-animation: Opacity 1.5s infinite;
+  -webkit-animation: Opacity 1.5s infinite;
+  animation: Opacity 1.5s infinite;
 }
 
-@-o-keyframes shakeIt {
-  /* line 6, ../sass/_animations.scss */
+@-o-keyframes Opacity {
+  /* line 16, ../sass/_animations.scss */
   0% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 
-  /* line 8, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   50% {
-    -webkit-transform: translate(-1px, -2px);
-    -moz-transform: translate(-1px, -2px);
-    -ms-transform: translate(-1px, -2px);
-    -o-transform: translate(-1px, -2px);
-    transform: translate(-1px, -2px);
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
+    opacity: 0.3;
   }
 
-  /* line 10, ../sass/_animations.scss */
+  /* line 21, ../sass/_animations.scss */
   100% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 }
 
-@-moz-keyframes shakeIt {
-  /* line 6, ../sass/_animations.scss */
+@-moz-keyframes Opacity {
+  /* line 16, ../sass/_animations.scss */
   0% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 
-  /* line 8, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   50% {
-    -webkit-transform: translate(-1px, -2px);
-    -moz-transform: translate(-1px, -2px);
-    -ms-transform: translate(-1px, -2px);
-    -o-transform: translate(-1px, -2px);
-    transform: translate(-1px, -2px);
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
+    opacity: 0.3;
   }
 
-  /* line 10, ../sass/_animations.scss */
+  /* line 21, ../sass/_animations.scss */
   100% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 }
 
-@-webkit-keyframes shakeIt {
-  /* line 6, ../sass/_animations.scss */
+@-webkit-keyframes Opacity {
+  /* line 16, ../sass/_animations.scss */
   0% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 
-  /* line 8, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   50% {
-    -webkit-transform: translate(-1px, -2px);
-    -moz-transform: translate(-1px, -2px);
-    -ms-transform: translate(-1px, -2px);
-    -o-transform: translate(-1px, -2px);
-    transform: translate(-1px, -2px);
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
+    opacity: 0.3;
   }
 
-  /* line 10, ../sass/_animations.scss */
+  /* line 21, ../sass/_animations.scss */
   100% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 }
 
-@-keyframes shakeIt {
-  /* line 6, ../sass/_animations.scss */
+@-keyframes Opacity {
+  /* line 16, ../sass/_animations.scss */
   0% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 
-  /* line 8, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   50% {
-    -webkit-transform: translate(-1px, -2px);
-    -moz-transform: translate(-1px, -2px);
-    -ms-transform: translate(-1px, -2px);
-    -o-transform: translate(-1px, -2px);
-    transform: translate(-1px, -2px);
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
+    opacity: 0.3;
   }
 
-  /* line 10, ../sass/_animations.scss */
+  /* line 21, ../sass/_animations.scss */
   100% {
-    -webkit-transform: translate(2px, 1px);
-    -moz-transform: translate(2px, 1px);
-    -ms-transform: translate(2px, 1px);
-    -o-transform: translate(2px, 1px);
-    transform: translate(2px, 1px);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    opacity: 0.8;
   }
 }
 
@@ -374,6 +266,87 @@ nav[data-role="header"] a {
 /* line 9, ../sass/_settings.scss */
 .ui-checkbox {
   display: inline;
+}
+
+/* line 13, ../sass/_settings.scss */
+form.settings {
+  margin: 30pt 0;
+}
+
+/* line 19, ../sass/_settings.scss */
+.b {
+  display: block;
+}
+
+/* line 23, ../sass/_settings.scss */
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #ddd;
+  margin: -20px -40px;
+  overflow: hidden;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* line 38, ../sass/_settings.scss */
+.check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+/* line 50, ../sass/_settings.scss */
+.check:checked ~ .track {
+  box-shadow: inset 0 0 0 20px #4bd863;
+}
+
+/* line 54, ../sass/_settings.scss */
+.check:checked ~ .switch {
+  right: 2px;
+  left: 22px;
+  transition: .4s ease;
+  transition-property: left, right;
+  transition-delay: .05s, 0s;
+}
+
+/* line 62, ../sass/_settings.scss */
+.switch {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 22px;
+  background-color: #fff;
+  border-radius: 36px;
+  z-index: 1;
+  transition: .4s ease;
+  transition-property: left, right;
+  transition-delay: 0s, .05s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 77, ../sass/_settings.scss */
+.track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s ease;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
 }
 
 /* line 1, ../sass/_audioentry.scss */

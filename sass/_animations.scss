@@ -1,12 +1,24 @@
 .shaking {
 	opacity: 0.9;
-	@include animation(shakeIt 0.2s infinite) 
+	// @include animation(shakeIt 0.2s infinite) 
+	@include animation(Opacity 1.5s infinite) 
 }
-@include keyframes(shakeIt) {
-	0% { 	@include translate(2px, 1px); 
-			@include rotate(-2deg); }
-	50% { 	@include translate(-1px, -2px); 
-			@include rotate(2deg); }
-	100% {	 @include translate(2px, 1px); 
-			@include rotate(-2deg); }
+// @include keyframes(shakeIt) {
+// 	0% { 	@include translate(2px, 1px); 
+// 			@include rotate(-2deg); }
+// 	50% { 	@include translate(-1px, -2px); 
+// 			@include rotate(2deg); }
+// 	100% {	 @include translate(2px, 1px); 
+// 			@include rotate(-2deg); }
+// }
+
+@include keyframes(Opacity) {
+	0% { 	opacity: 0.8 ; 
+			}
+	50% { 	opacity: 0.3 ; 
+			
+			}
+	100% {	opacity: 0.8 ; 
+			
+			}
 }

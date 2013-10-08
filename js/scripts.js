@@ -10,18 +10,19 @@ $(function(){
 		if (onSort) {
 			$(".all-thumbs").sortable('disable');
 			$( ".all-thumbs li" ).removeClass('shaking');
+			$('.sortToggle>.ui-btn-inner>.ui-btn-text').html('Reorganize');
 			 onSort = false;
 		}
 		else {
 		$(".all-thumbs").sortable('enable');
 		$( ".all-thumbs" ).disableSelection();
 		$(".all-thumbs li").addClass('shaking');
+		$('.sortToggle>.ui-btn-inner>.ui-btn-text').html('Done');
 		onSort = true;
 	 	}
 	};
 
 	function getArtist(e) {
-		console.log(e.currentTarget.children[1].innerHTML);
 		var currentArtist = (e.currentTarget.children[1].innerHTML)
 		$('.current-artist').html(currentArtist);
 	}

@@ -116,24 +116,28 @@
 <section data-role="page" id="all-artists">
 
 	<div data-role="panel" data-position="left" data-display="push" id="settings">
-		<nav data-role="header" role="navigation">
-			<a href=""></a> <!--fake a -->
-			<a href="#settings">Done</a>
-			<h1> Edit Settings </h1>
-		</nav>
+		<h1> Edit Settings </h1>
+		<form class="settings">
+		<p>Send me Notifications</p>
+		<div class="toggle">
+			<input type="checkbox" class="check">
+			<b class="b switch"></b>
+			<b class="b track"></b>
+		</div>
 
-		<form>
-		<input type="checkbox" name="artist" value="Childish Gambino">Childish Gambino</input><br>
-		<input type="checkbox" name="artist" value="CHVRCHES">CHVRCHES</input><br>		
-		<input type="checkbox" name="artist" value="Daughters">Daughters</input><br>
-		<input type="checkbox" name="artist" value="Foy Vance">Foy Vance</input><br>		
-		<input type="checkbox" name="artist" value="Jeremy Messersmith">Jeremy Messersmith</input><br>
-		<input type="checkbox" name="artist" value="Justin Nozuka">Justin Nozuka</input><br>		
-		<input type="checkbox" name="artist" value="Tiny Green Cars">Tiny Green Cars</input><br>
-		<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons</input><br>
-		<input type="checkbox" name="artist" value="Pheonix">Pheonix</input><br>
-		<input type="checkbox" name="artist" value="Robert Delong">Robert Delong</input><br> 		
-		<input type="checkbox" name="artist" value="Two Door Cinema Club">Two Door Cinema Club</input><br>
+		<p> for the following artists: </p> <br>
+		
+		<input type="checkbox" name="artist" value="Childish Gambino">Childish Gambino<br>
+		<input type="checkbox" name="artist" value="CHVRCHES">CHVRCHES<br>		
+		<input type="checkbox" name="artist" value="Daughters">Daughters<br>
+		<input type="checkbox" name="artist" value="Foy Vance">Foy Vance<br>		
+		<input type="checkbox" name="artist" value="Jeremy Messersmith">Jeremy Messersmith<br>
+		<input type="checkbox" name="artist" value="Justin Nozuka">Justin Nozuka<br>		
+		<input type="checkbox" name="artist" value="Tiny Green Cars">Tiny Green Cars<br>
+		<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons<br>
+		<input type="checkbox" name="artist" value="Pheonix">Pheonix<br>
+		<input type="checkbox" name="artist" value="Robert Delong">Robert Delong<br> 		
+		<input type="checkbox" name="artist" value="Two Door Cinema Club">Two Door Cinema Club<br>
 		<input type="checkbox" name="artist" value="Temper Trap">Temper Trap</input><br> 
 		</form>
 
@@ -142,7 +146,7 @@
 
 	<nav data-role="header" role="navigation">
 		<a href="#settings">Settings</a>
-		<a href="#" class="sortToggle">Reorder</a>
+		<a href="#all-artists" class="sortToggle">Reorder</a>
 		<h1> Fannotate </h1>
 	</nav>
 
