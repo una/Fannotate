@@ -100,9 +100,23 @@
 			
 		</nav>
 		
-		<div class="all-medals">
-			
-		</div>
+		<section class="voting">
+			<div class="ribbon-container">
+				<ul>
+					<li class="pep ribbon first">1</li>
+					<li class="pep ribbon second">2</li>
+					<li class="pep ribbon third">3</li>
+				</ul>
+			</div>
+			<div class="choices droppable">
+				<div class="magnet-area"></div>
+				<ul>
+					<li class="choice one"></li>
+					<li class="choice two"></li>
+					<li class="choice three"></li>
+				</ul>
+			</div>
+		</section>
 		<div class="submit-vote">
 			<a href="#" class="submit-btn">
 				SUBMIT
@@ -118,27 +132,28 @@
 	<div data-role="panel" data-position="left" data-display="push" id="settings">
 		<h1> Edit Settings </h1>
 		<form class="settings">
-		<p>Send me Notifications</p>
+		<h2>Send me Notifications</h2>
 		<div class="toggle">
-			<input type="checkbox" class="check">
+			<input type="checkbox" class="check" data-role="none">
 			<b class="b switch"></b>
 			<b class="b track"></b>
 		</div>
-
-		<p> for the following artists: </p> <br>
 		
-		<input type="checkbox" name="artist" value="Childish Gambino">Childish Gambino<br>
-		<input type="checkbox" name="artist" value="CHVRCHES">CHVRCHES<br>		
-		<input type="checkbox" name="artist" value="Daughters">Daughters<br>
-		<input type="checkbox" name="artist" value="Foy Vance">Foy Vance<br>		
-		<input type="checkbox" name="artist" value="Jeremy Messersmith">Jeremy Messersmith<br>
-		<input type="checkbox" name="artist" value="Justin Nozuka">Justin Nozuka<br>		
-		<input type="checkbox" name="artist" value="Tiny Green Cars">Tiny Green Cars<br>
-		<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons<br>
-		<input type="checkbox" name="artist" value="Pheonix">Pheonix<br>
-		<input type="checkbox" name="artist" value="Robert Delong">Robert Delong<br> 		
-		<input type="checkbox" name="artist" value="Two Door Cinema Club">Two Door Cinema Club<br>
-		<input type="checkbox" name="artist" value="Temper Trap">Temper Trap</input><br> 
+		<div class="fade-block"></div>
+		<br><br>
+		<p> for the following artists: </p> <br>
+			<input type="checkbox" name="artist" value="Childish Gambino">Childish Gambino<br>
+			<input type="checkbox" name="artist" value="CHVRCHES">CHVRCHES<br>		
+			<input type="checkbox" name="artist" value="Daughters">Daughters<br>
+			<input type="checkbox" name="artist" value="Foy Vance">Foy Vance<br>		
+			<input type="checkbox" name="artist" value="Jeremy Messersmith">Jeremy Messersmith<br>
+			<input type="checkbox" name="artist" value="Justin Nozuka">Justin Nozuka<br>		
+			<input type="checkbox" name="artist" value="Tiny Green Cars">Tiny Green Cars<br>
+			<input type="checkbox" name="artist" value="Mumford &amp; Sons">Mumford &amp; Sons<br>
+			<input type="checkbox" name="artist" value="Pheonix">Pheonix<br>
+			<input type="checkbox" name="artist" value="Robert Delong">Robert Delong<br> 		
+			<input type="checkbox" name="artist" value="Two Door Cinema Club">Two Door Cinema Club<br>
+			<input type="checkbox" name="artist" value="Temper Trap">Temper Trap</input><br>
 		</form>
 
 
@@ -146,7 +161,7 @@
 
 	<nav data-role="header" role="navigation">
 		<a href="#settings">Settings</a>
-		<a href="#all-artists" class="sortToggle">Reorder</a>
+		<a href="#all-artists" class="sortToggle">Arrange</a>
 		<h1> Fannotate </h1>
 	</nav>
 

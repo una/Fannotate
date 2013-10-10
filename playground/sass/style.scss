@@ -4,23 +4,25 @@
 // VARS
 $ribbon-size: 30px;
 
-section {
-	display: block; 
-	height: 200px;
-	width: 100%;
-}
-
 .ribbon-container {
 	background: green;
+	width: 70%;
+	float: right;
+	height: 80px;
+	display: block;
 }
 
 .choices {
-	background: orange;
+	background: green;
+	width: 30%;
+	height: 80px;
+	display: block;
 }
 
 .ribbon {
 	@include border-radius(50%);
 	background: white;
+	margin: 30px 20px;
 	cursor: pointer;
 	height: $ribbon-size;
 	text-align: center;
@@ -32,20 +34,20 @@ section {
 }
 
 .first {
-
+	margin-left: 20px;
 }
 
 .second {
-	margin-left: 50px;
+	margin-left: 70px;
 }
 
 .third {
-	margin-left: 100px;
+	margin-left: 120px;
 }
 
 .magnet-area {
 	@include border-radius(50%);
-	background: teal;
+	background: pink;
 	height: $ribbon-size*2;
 	margin: auto;
 	position: absolute;

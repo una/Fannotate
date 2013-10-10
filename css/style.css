@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/_variables.scss */
+/* line 15, ../sass/_variables.scss */
 #all-artists {
   background: #3a2538;
   /* Old browsers */
@@ -85,6 +85,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+}
+
+/* line 6, ../sass/_typography.scss */
+.callout {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
 }
 
 /* line 1, ../sass/_base.scss */
@@ -184,10 +190,10 @@ nav[data-role="header"] a {
 /* line 1, ../sass/_animations.scss */
 .shaking {
   opacity: 0.9;
-  -o-animation: Opacity 1.5s infinite;
-  -moz-animation: Opacity 1.5s infinite;
-  -webkit-animation: Opacity 1.5s infinite;
-  animation: Opacity 1.5s infinite;
+  -o-animation: Opacity 1.2s infinite;
+  -moz-animation: Opacity 1.2s infinite;
+  -webkit-animation: Opacity 1.2s infinite;
+  animation: Opacity 1.2s infinite;
 }
 
 @-o-keyframes Opacity {
@@ -196,12 +202,12 @@ nav[data-role="header"] a {
     opacity: 0.8;
   }
 
-  /* line 18, ../sass/_animations.scss */
+  /* line 17, ../sass/_animations.scss */
   50% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   100% {
     opacity: 0.8;
   }
@@ -213,12 +219,12 @@ nav[data-role="header"] a {
     opacity: 0.8;
   }
 
-  /* line 18, ../sass/_animations.scss */
+  /* line 17, ../sass/_animations.scss */
   50% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   100% {
     opacity: 0.8;
   }
@@ -230,12 +236,12 @@ nav[data-role="header"] a {
     opacity: 0.8;
   }
 
-  /* line 18, ../sass/_animations.scss */
+  /* line 17, ../sass/_animations.scss */
   50% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   100% {
     opacity: 0.8;
   }
@@ -247,12 +253,12 @@ nav[data-role="header"] a {
     opacity: 0.8;
   }
 
-  /* line 18, ../sass/_animations.scss */
+  /* line 17, ../sass/_animations.scss */
   50% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   100% {
     opacity: 0.8;
   }
@@ -260,41 +266,49 @@ nav[data-role="header"] a {
 
 /* line 1, ../sass/_settings.scss */
 #settings {
-  background: orange;
+  background: #0d0d0d;
+  color: white;
 }
 
-/* line 9, ../sass/_settings.scss */
+/* line 6, ../sass/_settings.scss */
+.fade-block {
+  background: #0d0d0d;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+  margin-top: 1em;
+}
+
+/* line 15, ../sass/_settings.scss */
 .ui-checkbox {
   display: inline;
 }
 
-/* line 13, ../sass/_settings.scss */
+/* line 19, ../sass/_settings.scss */
 form.settings {
   margin: 30pt 0;
 }
 
-/* line 19, ../sass/_settings.scss */
+/* line 24, ../sass/_settings.scss */
 .b {
   display: block;
 }
 
-/* line 23, ../sass/_settings.scss */
+/* line 28, ../sass/_settings.scss */
 .toggle {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 40px;
+  right: 20%;
+  width: 45px;
+  height: 25px;
   border-radius: 100px;
   background-color: #ddd;
   margin: -20px -40px;
   overflow: hidden;
   box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
-  position: relative;
-  box-sizing: border-box;
 }
 
-/* line 38, ../sass/_settings.scss */
+/* line 40, ../sass/_settings.scss */
 .check {
   position: absolute;
   display: block;
@@ -307,12 +321,12 @@ form.settings {
   z-index: 6;
 }
 
-/* line 50, ../sass/_settings.scss */
+/* line 52, ../sass/_settings.scss */
 .check:checked ~ .track {
-  box-shadow: inset 0 0 0 20px #4bd863;
+  box-shadow: inset 0 0 0 20px #60f0c0;
 }
 
-/* line 54, ../sass/_settings.scss */
+/* line 56, ../sass/_settings.scss */
 .check:checked ~ .switch {
   right: 2px;
   left: 22px;
@@ -321,7 +335,7 @@ form.settings {
   transition-delay: .05s, 0s;
 }
 
-/* line 62, ../sass/_settings.scss */
+/* line 64, ../sass/_settings.scss */
 .switch {
   position: absolute;
   left: 2px;
@@ -337,7 +351,7 @@ form.settings {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 77, ../sass/_settings.scss */
+/* line 79, ../sass/_settings.scss */
 .track {
   position: absolute;
   left: 0;
@@ -349,7 +363,102 @@ form.settings {
   border-radius: 40px;
 }
 
+/* line 92, ../sass/_settings.scss */
+.checkbox {
+  width: 10pt;
+  height: 10pt;
+  border-radius: 50%;
+  background: #ff360e;
+  display: inline-block;
+}
+
 /* line 1, ../sass/_audioentry.scss */
 .submit-vote {
   display: none;
+}
+
+/* line 5, ../sass/_audioentry.scss */
+.callout {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 11, ../sass/_audioentry.scss */
+.individual-entry {
+  color: #f0f1bc;
+}
+
+/* line 16, ../sass/_audioentry.scss */
+.ribbon-container {
+  background: green;
+  width: 70%;
+  float: right;
+  height: 80px;
+  display: block;
+}
+
+/* line 24, ../sass/_audioentry.scss */
+.choices {
+  background: green;
+  width: 30%;
+  height: 80px;
+  display: block;
+}
+
+/* line 31, ../sass/_audioentry.scss */
+.ribbon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: white;
+  margin: 30px 20px;
+  cursor: pointer;
+  height: 30px;
+  text-align: center;
+  width: 30px;
+  z-index: 5;
+}
+/* line 40, ../sass/_audioentry.scss */
+.ribbon:hover {
+  opacity: 0.8;
+}
+
+/* line 45, ../sass/_audioentry.scss */
+.first {
+  margin-left: 20px;
+}
+
+/* line 49, ../sass/_audioentry.scss */
+.second {
+  margin-left: 70px;
+}
+
+/* line 53, ../sass/_audioentry.scss */
+.third {
+  margin-left: 120px;
+}
+
+/* line 57, ../sass/_audioentry.scss */
+.magnet-area {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: pink;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+}
+
+/* line 67, ../sass/_audioentry.scss */
+.choices {
+  position: absolute;
 }

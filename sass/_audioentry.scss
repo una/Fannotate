@@ -1,3 +1,69 @@
 .submit-vote {
 	display: none;
 }
+
+.callout {
+	@extend %text-xlight;
+	font-size: 2em;
+	text-align: center;
+}
+
+.individual-entry {
+	color: $text-cream;
+}
+
+
+.ribbon-container {
+	background: green;
+	width: 70%;
+	float: right;
+	height: 80px;
+	display: block;
+}
+
+.choices {
+	background: green;
+	width: 30%;
+	height: 80px;
+	display: block;
+}
+
+.ribbon {
+	@include border-radius(50%);
+	background: white;
+	margin: 30px 20px;
+	cursor: pointer;
+	height: $ribbon-size;
+	text-align: center;
+	width: $ribbon-size;
+	z-index: 5;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.first {
+	margin-left: 20px;
+}
+
+.second {
+	margin-left: 70px;
+}
+
+.third {
+	margin-left: 120px;
+}
+
+.magnet-area {
+	@include border-radius(50%);
+	background: pink;
+	height: $ribbon-size*2;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: $ribbon-size*2;
+}
+
+.choices {
+	position: absolute;
+}

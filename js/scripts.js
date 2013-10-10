@@ -5,6 +5,7 @@ $(function(){
 	$('.sortToggle').on('click', allowSorting );
 	$('.artist-link').on('click', getArtist );
 	var onSort = false;
+	var toggled = false;
 
 	function allowSorting() {
 		if (onSort) {
@@ -25,6 +26,19 @@ $(function(){
 	function getArtist(e) {
 		var currentArtist = (e.currentTarget.children[1].innerHTML)
 		$('.current-artist').html(currentArtist);
+	}
+
+	$('.toggle').on('click', toggleList);
+
+	function toggleList(){
+		if (toggled) {
+			toggled = false;
+			$('.fade-block').show();
+		}
+		else {
+			toggled = true;
+			$('.fade-block').hide();
+		}
 	}
 
 }); // end of SIAF
