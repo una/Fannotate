@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 7, ../sass/style.scss */
 .ribbon-container {
-  background: green;
+  background: blue;
   width: 70%;
   float: right;
   height: 80px;
