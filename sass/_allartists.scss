@@ -13,6 +13,7 @@
 }
 
 .artist-thumb {
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 }
@@ -27,4 +28,10 @@
 	color: white;
 	font-size: 7.5pt;
 	padding: 0.5em 5%;
+}
+
+@each $artist in $artist-thumbs {
+	.#{$artist}{
+		background-image: image-url("artists/#{$artist}.jpg");
+	}
 }

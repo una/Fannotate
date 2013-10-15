@@ -21,3 +21,19 @@ $ribbon-size: 30px;
 	background: -ms-radial-gradient(center, ellipse cover,  $home-bg-grad-center 0%,$black 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  $home-bg-grad-center 0%,$black 100%); /* W3C */
 	}
+
+	//ARTIST LOOP
+	$artist-thumbs: 	
+			childish_gambino,
+			chvrches,
+			daughter,
+			foy_vance,
+			jeremy_messersmith,
+			justin_nozuka,
+			tiny_green_cars,
+			mumford_and_sons,
+			phoenix,
+			robert_delong,
+			two_door_cinema_club,
+			temper_trap
+	;

@@ -1,9 +1,10 @@
 $(function(){
-
-	// Sorting Page Functions
+ 	// Turning things on
 	$(".all-thumbs").sortable().sortable('disable');
 	$('.sortToggle').on('click', allowSorting );
 	$('.artist-link').on('click', getArtist );
+	$('.toggle').on('click', toggleList);
+	document.load(getArtistThumbs());
 	var onSort = false;
 	var toggled = false;
 
@@ -28,8 +29,6 @@ $(function(){
 		$('.current-artist').html(currentArtist);
 	}
 
-	$('.toggle').on('click', toggleList);
-
 	function toggleList(){
 		if (toggled) {
 			toggled = false;
@@ -38,6 +37,14 @@ $(function(){
 		else {
 			toggled = true;
 			$('.fade-block').hide();
+		}
+	}
+
+	function getArtistThumbs() {
+		for (var i=0;i<$('.artist-link').length;i++) {
+			var band = $('.artist-name')[i].innerHTML.toLowerCase().replace( /\s/g, "_");
+			console.log(band);
+			$($('.artist-name')[i]).prev('figure').addClass(band);
 		}
 	}
 
