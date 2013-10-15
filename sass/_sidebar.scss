@@ -6,8 +6,30 @@
 	}
 	
 	h3 a{
+		
 		color: $accent-red;
 		margin-top: -3px;
+		
+		&:after {
+			content: "";
+			background: image-url('icons/dir_arrow.svg') no-repeat;
+			width: 40px;
+			height: 40px;
+			background-size: 60%;
+			display: block;
+			@include rotate(90deg);
+			position: absolute;
+			right: 10px;
+			top: 5px;
+		}
+	}
+
+	.ui-collapsible-collapsed {
+		h3 a:after {
+			@include rotate(-90deg);
+			top: -10px;
+		}
+		
 	}
 
 	.ui-panel-inner {
@@ -53,8 +75,5 @@ a {
 		background: $accent-purple-light
 	}
 
-	&:after {
-		content: "";
-		background: image-url('icons/dir_arrow.svg')
-	}
+
 }

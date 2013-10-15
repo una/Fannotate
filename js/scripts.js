@@ -47,6 +47,7 @@ $(function(){
 			$($('.artist-name')[i]).prev('figure').addClass(band);
 		}
 	}
+	
 
 }); // end of SIAF
 

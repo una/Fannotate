@@ -136,7 +136,7 @@ section[data-role="page"] .ui-title {
 
 /* line 38, ../sass/_base.scss */
 .ui-btn-text {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* line 43, ../sass/_base.scss */
@@ -176,16 +176,42 @@ nav[data-role="header"] a {
   margin-top: -3px;
 }
 /* line 13, ../sass/_sidebar.scss */
+#entry-nav h3 a:after {
+  content: "";
+  background: url('/images/icons/dir_arrow.svg?1381806192') no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 60%;
+  display: block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+/* line 28, ../sass/_sidebar.scss */
+#entry-nav .ui-collapsible-collapsed h3 a:after {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: -10px;
+}
+/* line 35, ../sass/_sidebar.scss */
 #entry-nav .ui-panel-inner {
   width: 100%;
   padding: 0;
 }
-/* line 18, ../sass/_sidebar.scss */
+/* line 40, ../sass/_sidebar.scss */
 #entry-nav .ui-collapsible-content {
   padding: 0;
 }
 
-/* line 23, ../sass/_sidebar.scss */
+/* line 45, ../sass/_sidebar.scss */
 .morebtn {
   background: url('/images/icons/menu.svg?1381806191');
   background-repeat: no-repeat;
@@ -195,42 +221,36 @@ nav[data-role="header"] a {
   display: block;
 }
 
-/* line 32, ../sass/_sidebar.scss */
+/* line 54, ../sass/_sidebar.scss */
 .ui-header .ui-btn-right {
   top: 5px;
 }
 
-/* line 36, ../sass/_sidebar.scss */
+/* line 58, ../sass/_sidebar.scss */
 a {
   text-decoration: none;
 }
 
-/* line 41, ../sass/_sidebar.scss */
+/* line 63, ../sass/_sidebar.scss */
 .active-entries,
 .past-winners {
   width: 100%;
 }
-/* line 44, ../sass/_sidebar.scss */
+/* line 66, ../sass/_sidebar.scss */
 .active-entries li,
 .past-winners li {
   padding: 1em;
   margin-bottom: 2px;
 }
-/* line 49, ../sass/_sidebar.scss */
+/* line 71, ../sass/_sidebar.scss */
 .active-entries li:nth-child(even),
 .past-winners li:nth-child(even) {
   background: #72496c;
 }
-/* line 52, ../sass/_sidebar.scss */
+/* line 74, ../sass/_sidebar.scss */
 .active-entries li:nth-child(odd),
 .past-winners li:nth-child(odd) {
   background: #90708c;
-}
-/* line 56, ../sass/_sidebar.scss */
-.active-entries:after,
-.past-winners:after {
-  content: "";
-  background: url('/images/icons/dir_arrow.svg?1381806192');
 }
 
 /* line 5, ../sass/_allartists.scss */
@@ -410,15 +430,15 @@ a {
 .settingsbtn {
   background: url('/images/icons/settings.svg?1381809021');
   background-repeat: no-repeat;
-  background-size: 70%;
-  width: 50px;
-  height: 50px;
+  background-size: 60%;
+  width: 45px;
+  height: 45px;
   display: block;
 }
 /* line 13, ../sass/_settings.scss */
 .settingsbtn.ui-btn-left {
-  left: 5px;
-  top: 5px;
+  left: 8px;
+  top: 8px;
 }
 
 /* line 19, ../sass/_settings.scss */
