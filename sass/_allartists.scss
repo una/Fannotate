@@ -31,6 +31,6 @@
 
 @each $artist in $artist-thumbs {
 	.#{$artist}{
-		background-image: image-url("artists/#{$artist}.jpg");
+		background-image: image-url("thumbs/#{$artist}.jpg");
 	}
 }

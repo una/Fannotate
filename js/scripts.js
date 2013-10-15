@@ -4,7 +4,7 @@ $(function(){
 	$('.sortToggle').on('click', allowSorting );
 	$('.artist-link').on('click', getArtist );
 	$('.toggle').on('click', toggleList);
-	document.load(getArtistThumbs());
+	getArtistThumbs();
 	var onSort = false;
 	var toggled = false;
 

@@ -1,5 +1,47 @@
 #entry-nav {
-	// @include transition-duration(1s);
-	background: pink;
-	// width: 200px;
+	background: $black;
+	
+	a {
+		color: white;
+	}
+	
+	h3 a{
+		color: $accent-red;
+		margin-top: -3px;
+	}
+
+	.ui-panel-inner {
+	width: 100%;
+	padding: 0;
+	}
+
+	.ui-collapsible-content {
+		padding: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.active-entries,
+.past-winners {
+	width: 100%;
+	
+	li {
+		padding: 1em;
+		margin-bottom: 2px;
+	}
+	
+	li:nth-child(even) {
+		background: $accent-purple
+	}
+	li:nth-child(odd) {
+		background: $accent-purple-light
+	}
+
+	&:after {
+		content: "";
+		background: image-url('icons/dir_arrow.svg')
+	}
 }
