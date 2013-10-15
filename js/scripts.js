@@ -12,7 +12,7 @@ $(function(){
 		if (onSort) {
 			$(".all-thumbs").sortable('disable');
 			$( ".all-thumbs li" ).removeClass('shaking');
-			$('.sortToggle>.ui-btn-inner>.ui-btn-text').html('Reorganize');
+			$('.sortToggle>.ui-btn-inner>.ui-btn-text').html('Arrange');
 			 onSort = false;
 		}
 		else {
