@@ -159,7 +159,6 @@ nav[data-role="header"] a {
 
 /* line 5, ../sass/_allartists.scss */
 .all-thumbs li {
-  background-color: yellowgreen;
   display: block;
   float: left;
   height: 67pt;
@@ -168,14 +167,14 @@ nav[data-role="header"] a {
   width: 67pt;
 }
 
-/* line 15, ../sass/_allartists.scss */
+/* line 14, ../sass/_allartists.scss */
 .artist-thumb {
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
-/* line 21, ../sass/_allartists.scss */
+/* line 20, ../sass/_allartists.scss */
 .artist-name {
   background: rgba(255, 54, 14, 0.8);
   bottom: 0;
@@ -188,62 +187,62 @@ nav[data-role="header"] a {
   padding: 0.5em 5%;
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .childish_gambino {
   background-image: url('/images/artists/childish_gambino.jpg?1381448226');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .chvrches {
   background-image: url('/images/artists/chvrches.jpg?1381448220');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .daughter {
   background-image: url('/images/artists/daughter.jpg?1381448212');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .foy_vance {
   background-image: url('/images/artists/foy_vance.jpg?1381448205');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .jeremy_messersmith {
   background-image: url('/images/artists/jeremy_messersmith.jpg?1381448193');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .justin_nozuka {
   background-image: url('/images/artists/justin_nozuka.jpg?1381448184');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .tiny_green_cars {
   background-image: url('/images/artists/tiny_green_cars.jpg?1381448245');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .mumford_and_sons {
   background-image: url('/images/artists/mumford_and_sons.jpg?1381448157');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .phoenix {
   background-image: url('/images/artists/phoenix.jpg?1381448236');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .robert_delong {
   background-image: url('/images/artists/robert_delong.jpg?1381448150');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .two_door_cinema_club {
   background-image: url('/images/artists/two_door_cinema_club.jpg?1381448122');
 }
 
-/* line 34, ../sass/_allartists.scss */
+/* line 33, ../sass/_allartists.scss */
 .temper_trap {
   background-image: url('/images/artists/temper_trap.jpg?1381448142');
 }
