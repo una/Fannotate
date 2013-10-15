@@ -3,6 +3,19 @@
 	color: white;
 }
 
+.settingsbtn {
+  background: image-url('icons/settings.svg');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  &.ui-btn-left {
+    left: 5px;
+    top: 5px;
+  }
+}
+
 .fade-block {
 	background: $black;
 	width: 90%;

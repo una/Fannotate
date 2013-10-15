@@ -2,6 +2,11 @@
 	display: none;
 }
 
+#single-artist {
+	background-image: image-url('backgrounds/audio_background.jpg');
+	background-size: cover;
+}
+
 .callout {
 	@extend %text-xlight;
 	font-size: 2em;
@@ -10,11 +15,11 @@
 
 .individual-entry {
 	color: $text-cream;
+	height: 300px; //temp! take out
 }
 
 
 .ribbon-container {
-	background: green;
 	width: 70%;
 	float: right;
 	height: 80px;
@@ -22,41 +27,60 @@
 }
 
 .choices {
-	background: green;
 	width: 30%;
 	height: 80px;
 	display: block;
 }
 
 .ribbon {
-	@include border-radius(50%);
-	background: white;
 	margin: 30px 20px;
 	cursor: pointer;
-	height: $ribbon-size;
+	height: $ribbon-size + 10px;
 	text-align: center;
 	width: $ribbon-size;
 	z-index: 5;
+	
+	
 	&:hover {
 		opacity: 0.8;
 	}
 }
 
+.shadow {
+	opacity: 0.2;
+	&:hover {
+		opacity: 0.2; 
+	}
+}
+
 .first {
 	margin-left: 20px;
+	background: image-url('icons/medal1.svg') 50% no-repeat;
+	background-size: 100%;
+	
+	&.shadow {
+		margin-left: 15px;
+	}
 }
 
 .second {
 	margin-left: 70px;
+	background: image-url('icons/medal2.svg') 50% no-repeat;
+	background-size: 100%;
+	&.shadow {
+		margin-left: 65px;
+	}
 }
 
 .third {
 	margin-left: 120px;
+	background: image-url('icons/medal3.svg') 50% no-repeat;
+	background-size: 100%;
 }
 
 .magnet-area {
-	@include border-radius(50%);
-	background: pink;
+	background: image-url('icons/medalbg.svg') 50% no-repeat;
+	background-size: 88%;
 	height: $ribbon-size*2;
 	margin: auto;
 	position: absolute;

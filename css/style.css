@@ -105,9 +105,8 @@ section[data-role="page"] {
   width: 50%;
   height: 100%;
   float: left;
-  background: green;
 }
-/* line 14, ../sass/_base.scss */
+/* line 13, ../sass/_base.scss */
 section[data-role="page"] .ui-title {
   margin: auto;
   padding: 0.6em;
@@ -116,7 +115,7 @@ section[data-role="page"] .ui-title {
 }
 
 /* content area */
-/* line 23, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
 .ui-content {
   border-width: 0;
   overflow: visible;
@@ -124,15 +123,26 @@ section[data-role="page"] .ui-title {
   padding: 5pt;
 }
 
-/* line 30, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 #all-artists .ui-content {
   padding: 5pt 0 5pt 5pt;
 }
 
-/* line 34, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 .right {
   float: right;
   right: 0;
+}
+
+/* line 38, ../sass/_base.scss */
+.ui-btn-text {
+  font-size: 16px;
+}
+
+/* line 43, ../sass/_base.scss */
+.ui-title,
+section[data-role="page"] .ui-title {
+  font-size: 18px;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -176,32 +186,47 @@ nav[data-role="header"] a {
 }
 
 /* line 23, ../sass/_sidebar.scss */
+.morebtn {
+  background: url('/images/icons/menu.svg?1381806191');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* line 32, ../sass/_sidebar.scss */
+.ui-header .ui-btn-right {
+  top: 5px;
+}
+
+/* line 36, ../sass/_sidebar.scss */
 a {
   text-decoration: none;
 }
 
-/* line 28, ../sass/_sidebar.scss */
+/* line 41, ../sass/_sidebar.scss */
 .active-entries,
 .past-winners {
   width: 100%;
 }
-/* line 31, ../sass/_sidebar.scss */
+/* line 44, ../sass/_sidebar.scss */
 .active-entries li,
 .past-winners li {
   padding: 1em;
   margin-bottom: 2px;
 }
-/* line 36, ../sass/_sidebar.scss */
+/* line 49, ../sass/_sidebar.scss */
 .active-entries li:nth-child(even),
 .past-winners li:nth-child(even) {
   background: #72496c;
 }
-/* line 39, ../sass/_sidebar.scss */
+/* line 52, ../sass/_sidebar.scss */
 .active-entries li:nth-child(odd),
 .past-winners li:nth-child(odd) {
   background: #90708c;
 }
-/* line 43, ../sass/_sidebar.scss */
+/* line 56, ../sass/_sidebar.scss */
 .active-entries:after,
 .past-winners:after {
   content: "";
@@ -382,6 +407,21 @@ a {
 }
 
 /* line 6, ../sass/_settings.scss */
+.settingsbtn {
+  background: url('/images/icons/settings.svg?1381809021');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+/* line 13, ../sass/_settings.scss */
+.settingsbtn.ui-btn-left {
+  left: 5px;
+  top: 5px;
+}
+
+/* line 19, ../sass/_settings.scss */
 .fade-block {
   background: #0d0d0d;
   width: 90%;
@@ -391,22 +431,22 @@ a {
   margin-top: 1em;
 }
 
-/* line 15, ../sass/_settings.scss */
+/* line 28, ../sass/_settings.scss */
 .ui-checkbox {
   display: inline;
 }
 
-/* line 19, ../sass/_settings.scss */
+/* line 32, ../sass/_settings.scss */
 form.settings {
   margin: 30pt 0;
 }
 
-/* line 24, ../sass/_settings.scss */
+/* line 37, ../sass/_settings.scss */
 .b {
   display: block;
 }
 
-/* line 28, ../sass/_settings.scss */
+/* line 41, ../sass/_settings.scss */
 .toggle {
   position: absolute;
   right: 20%;
@@ -419,7 +459,7 @@ form.settings {
   box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 40, ../sass/_settings.scss */
+/* line 53, ../sass/_settings.scss */
 .check {
   position: absolute;
   display: block;
@@ -432,12 +472,12 @@ form.settings {
   z-index: 6;
 }
 
-/* line 52, ../sass/_settings.scss */
+/* line 65, ../sass/_settings.scss */
 .check:checked ~ .track {
   box-shadow: inset 0 0 0 20px #60f0c0;
 }
 
-/* line 56, ../sass/_settings.scss */
+/* line 69, ../sass/_settings.scss */
 .check:checked ~ .switch {
   right: 2px;
   left: 22px;
@@ -446,7 +486,7 @@ form.settings {
   transition-delay: .05s, 0s;
 }
 
-/* line 64, ../sass/_settings.scss */
+/* line 77, ../sass/_settings.scss */
 .switch {
   position: absolute;
   left: 2px;
@@ -462,7 +502,7 @@ form.settings {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 79, ../sass/_settings.scss */
+/* line 92, ../sass/_settings.scss */
 .track {
   position: absolute;
   left: 0;
@@ -474,7 +514,7 @@ form.settings {
   border-radius: 40px;
 }
 
-/* line 92, ../sass/_settings.scss */
+/* line 105, ../sass/_settings.scss */
 .checkbox {
   width: 10pt;
   height: 10pt;
@@ -489,76 +529,94 @@ form.settings {
 }
 
 /* line 5, ../sass/_audioentry.scss */
+#single-artist {
+  background-image: url('/images/backgrounds/audio_background.jpg?1381806256');
+  background-size: cover;
+}
+
+/* line 10, ../sass/_audioentry.scss */
 .callout {
   font-size: 2em;
   text-align: center;
 }
 
-/* line 11, ../sass/_audioentry.scss */
+/* line 16, ../sass/_audioentry.scss */
 .individual-entry {
   color: #f0f1bc;
+  height: 300px;
 }
 
-/* line 16, ../sass/_audioentry.scss */
+/* line 22, ../sass/_audioentry.scss */
 .ribbon-container {
-  background: green;
   width: 70%;
   float: right;
   height: 80px;
   display: block;
 }
 
-/* line 24, ../sass/_audioentry.scss */
+/* line 29, ../sass/_audioentry.scss */
 .choices {
-  background: green;
   width: 30%;
   height: 80px;
   display: block;
 }
 
-/* line 31, ../sass/_audioentry.scss */
+/* line 35, ../sass/_audioentry.scss */
 .ribbon {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background: white;
   margin: 30px 20px;
   cursor: pointer;
-  height: 30px;
+  height: 40px;
   text-align: center;
   width: 30px;
   z-index: 5;
 }
-/* line 40, ../sass/_audioentry.scss */
+/* line 44, ../sass/_audioentry.scss */
 .ribbon:hover {
   opacity: 0.8;
 }
 
-/* line 45, ../sass/_audioentry.scss */
+/* line 49, ../sass/_audioentry.scss */
+.shadow {
+  opacity: 0.2;
+}
+/* line 51, ../sass/_audioentry.scss */
+.shadow:hover {
+  opacity: 0.2;
+}
+
+/* line 56, ../sass/_audioentry.scss */
 .first {
   margin-left: 20px;
+  background: url('/images/icons/medal1.svg?1381806191') 50% no-repeat;
+  background-size: 100%;
+}
+/* line 61, ../sass/_audioentry.scss */
+.first.shadow {
+  margin-left: 15px;
 }
 
-/* line 49, ../sass/_audioentry.scss */
+/* line 66, ../sass/_audioentry.scss */
 .second {
   margin-left: 70px;
+  background: url('/images/icons/medal2.svg?1381806191') 50% no-repeat;
+  background-size: 100%;
+}
+/* line 70, ../sass/_audioentry.scss */
+.second.shadow {
+  margin-left: 65px;
 }
 
-/* line 53, ../sass/_audioentry.scss */
+/* line 75, ../sass/_audioentry.scss */
 .third {
   margin-left: 120px;
+  background: url('/images/icons/medal3.svg?1381806191') 50% no-repeat;
+  background-size: 100%;
 }
 
-/* line 57, ../sass/_audioentry.scss */
+/* line 81, ../sass/_audioentry.scss */
 .magnet-area {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background: pink;
+  background: url('/images/icons/medalbg.svg?1381806191') 50% no-repeat;
+  background-size: 88%;
   height: 60px;
   margin: auto;
   position: absolute;
@@ -569,7 +627,7 @@ form.settings {
   width: 60px;
 }
 
-/* line 67, ../sass/_audioentry.scss */
+/* line 91, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }

@@ -9,7 +9,6 @@ section[data-role="page"] {
 	width: 50%;
 	height: 100%;
 	float: left;
-	background: green;
 	
 	.ui-title {
 		margin: auto;
@@ -34,4 +33,13 @@ section[data-role="page"] {
 .right {
 	float: right;
 	right: 0;
+}
+
+.ui-btn-text {
+	font-size: 16px;
+}
+
+.ui-title,
+section[data-role="page"] .ui-title {
+	font-size: 18px;
 }
