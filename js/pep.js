@@ -3,9 +3,8 @@ $(document).ready(function(){
 	$('.pep').pep({
 		droppable: ".droppable",
 		overlapFunction: false,
-		useCSSTranslation: true,
+		useCSSTranslation: false,
 		constrainTo: 'window',
-
 		start: function(ev, obj){
 			// obj.noCenter = false;
 		},

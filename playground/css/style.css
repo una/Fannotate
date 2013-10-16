@@ -116,24 +116,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 48, ../sass/style.scss */
-.magnet-area {
+.droppable {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   background: pink;
-  height: 60px;
+  height: 120px;
   margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 60px;
+  width: 120px;
+  bottom: 30px;
+  left: 30px;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
+.pep {
+  margin-top: 400px;
+}
+
+/* line 63, ../sass/style.scss */
 .choices {
   position: absolute;
 }

@@ -109,3 +109,21 @@ form.settings {
   background: $accent-red;
   display: inline-block;
 }
+
+.artist-setting {
+  line-height: 0em;
+  margin-left: 2em;
+}
+
+.red-check {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: red;
+  margin: 20px 5px -15px;
+  background: image-url('icons/checkoff.svg') 50%;
+  background-size: 100%;
+  &.checked {
+    background: image-url('icons/checkon.svg')
+  }
+}

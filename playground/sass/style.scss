@@ -45,14 +45,19 @@ $ribbon-size: 30px;
 	margin-left: 120px;
 }
 
-.magnet-area {
+.droppable {
 	@include border-radius(50%);
 	background: pink;
-	height: $ribbon-size*2;
+	height: $ribbon-size*4;
 	margin: auto;
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	width: $ribbon-size*2;
+	width: $ribbon-size*4;
+	bottom: 30px;
+	left: 30px;
+}
+
+.pep {
+	margin-top: 400px;
 }
 
 .choices {

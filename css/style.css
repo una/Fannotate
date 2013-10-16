@@ -543,6 +543,27 @@ form.settings {
   display: inline-block;
 }
 
+/* line 113, ../sass/_settings.scss */
+.artist-setting {
+  line-height: 0em;
+  margin-left: 2em;
+}
+
+/* line 118, ../sass/_settings.scss */
+.red-check {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: red;
+  margin: 20px 5px -15px;
+  background: url('/images/icons/checkoff.svg?1381806191') 50%;
+  background-size: 100%;
+}
+/* line 126, ../sass/_settings.scss */
+.red-check.checked {
+  background: url('/images/icons/checkon.svg?1381806191');
+}
+
 /* line 1, ../sass/_audioentry.scss */
 .submit-vote {
   display: none;
@@ -550,7 +571,7 @@ form.settings {
 
 /* line 5, ../sass/_audioentry.scss */
 #single-artist {
-  background: url('/images/backgrounds/audio_background.jpg?1381806256') 30%;
+  background: url('/images/backgrounds/audio_background.jpg?1381806256') 30% 0;
   background-size: 110%;
 }
 
@@ -563,7 +584,7 @@ form.settings {
 /* line 16, ../sass/_audioentry.scss */
 .individual-entry {
   color: #f0f1bc;
-  height: 300px;
+  min-height: 400px;
 }
 
 /* line 22, ../sass/_audioentry.scss */
@@ -571,12 +592,11 @@ form.settings {
   width: 100%;
   height: 80px;
   display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-top: 280px;
+  margin-left: 100px;
 }
 
-/* line 31, ../sass/_audioentry.scss */
+/* line 30, ../sass/_audioentry.scss */
 .droppable {
   position: absolute;
   width: 100px;
@@ -585,7 +605,7 @@ form.settings {
   bottom: 0;
 }
 
-/* line 39, ../sass/_audioentry.scss */
+/* line 38, ../sass/_audioentry.scss */
 .ribbon {
   margin: 30px 20px;
   cursor: pointer;
@@ -595,51 +615,51 @@ form.settings {
   display: inline-block;
   bottom: 0;
 }
-/* line 48, ../sass/_audioentry.scss */
+/* line 47, ../sass/_audioentry.scss */
 .ribbon:hover {
   opacity: 0.8;
 }
 
-/* line 54, ../sass/_audioentry.scss */
+/* line 53, ../sass/_audioentry.scss */
 .shadow {
   position: absolute;
   opacity: 0.2;
 }
-/* line 57, ../sass/_audioentry.scss */
+/* line 56, ../sass/_audioentry.scss */
 .shadow:hover {
   opacity: 0.2;
 }
 
-/* line 62, ../sass/_audioentry.scss */
+/* line 61, ../sass/_audioentry.scss */
 .first {
   margin-left: 20px;
   background: url('/images/icons/medal1.svg?1381861111') 50% no-repeat;
   background-size: 100%;
 }
-/* line 67, ../sass/_audioentry.scss */
+/* line 66, ../sass/_audioentry.scss */
 .first.shadow {
   margin-left: 15px;
 }
 
-/* line 72, ../sass/_audioentry.scss */
+/* line 71, ../sass/_audioentry.scss */
 .second {
   margin-left: 70px;
   background: url('/images/icons/medal2.svg?1381861111') 50% no-repeat;
   background-size: 100%;
 }
-/* line 76, ../sass/_audioentry.scss */
+/* line 75, ../sass/_audioentry.scss */
 .second.shadow {
   margin-left: 65px;
 }
 
-/* line 81, ../sass/_audioentry.scss */
+/* line 80, ../sass/_audioentry.scss */
 .third {
   margin-left: 120px;
   background: url('/images/icons/medal3.svg?1381861111') 50% no-repeat;
   background-size: 100%;
 }
 
-/* line 87, ../sass/_audioentry.scss */
+/* line 86, ../sass/_audioentry.scss */
 .magnet-area {
   background: url('/images/icons/medalbg.svg?1381861273') 50% no-repeat;
   background-size: 88%;
@@ -647,18 +667,29 @@ form.settings {
   margin: auto;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   right: 0;
   width: 60px;
 }
 
-/* line 98, ../sass/_audioentry.scss */
+/* line 96, ../sass/_audioentry.scss */
+.droppable {
+  top: 400px;
+  left: 0;
+}
+
+/* line 101, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }
 
-/* line 102, ../sass/_audioentry.scss */
-.pep {
-  top: 0;
+/* line 105, ../sass/_audioentry.scss */
+.ribbon-shadows {
+  position: absolute;
+  display: block;
+  width: 190px;
+  height: 80px;
+  right: 20px;
+  top: 410px;
 }
