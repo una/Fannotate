@@ -86,7 +86,49 @@ $(function(){
 	  { 
 	  	Song1.pause(); 
 	  }
-	
+
+	var x=1;
+	function sampleNumber() {
+		
+		$('.larr').on('click', function(){
+			if (x > 1){
+				x-=1;
+			}
+			changeSample();
+		});
+		$('.rarr').on('click', function(){
+			if (x < $('.sample-options').children.length+1){
+				x+=1;
+			}
+			changeSample();
+		});
+
+	}
+
+	sampleNumber();
+
+	function changeSample() {
+		switch (x)
+		{
+		case 1:
+			$('.audio-1').css('margin-left','0px');
+			$('.audio-2').css('margin-left','300px');
+			$('.audio-3').css('margin-left','600px');
+
+		  break;
+		case 2:
+			$('.audio-1').css('margin-left','-300px');
+			$('.audio-2').css('margin-left','0px');
+			$('.audio-3').css('margin-left','300px');
+		  break;
+		case 3:
+			$('.audio-1').css('margin-left','-600px');
+			$('.audio-2').css('margin-left','-300px');
+			$('.audio-3').css('margin-left','0px');
+		  break;
+		}
+	}
+	//to make the sections move, add or subtract a horizontal 300px
 
 }); // end of SIAF
 

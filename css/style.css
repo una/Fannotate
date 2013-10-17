@@ -601,10 +601,11 @@ form.settings {
   width: 100%;
   height: 80px;
   display: block;
-  margin-left: 130px;
+  margin-top: 0px;
+  margin-left: 80px;
 }
 
-/* line 37, ../sass/_audioentry.scss */
+/* line 38, ../sass/_audioentry.scss */
 .droppable {
   position: absolute;
   width: 100px;
@@ -613,7 +614,7 @@ form.settings {
   bottom: 0;
 }
 
-/* line 45, ../sass/_audioentry.scss */
+/* line 46, ../sass/_audioentry.scss */
 .ribbon {
   margin: 30px 20px;
   cursor: pointer;
@@ -623,51 +624,51 @@ form.settings {
   display: inline-block;
   bottom: 0;
 }
-/* line 54, ../sass/_audioentry.scss */
+/* line 55, ../sass/_audioentry.scss */
 .ribbon:hover {
   opacity: 0.8;
 }
 
-/* line 60, ../sass/_audioentry.scss */
+/* line 61, ../sass/_audioentry.scss */
 .shadow {
   position: absolute;
   opacity: 0.2;
 }
-/* line 63, ../sass/_audioentry.scss */
+/* line 64, ../sass/_audioentry.scss */
 .shadow:hover {
   opacity: 0.2;
 }
 
-/* line 68, ../sass/_audioentry.scss */
+/* line 69, ../sass/_audioentry.scss */
 .first {
   margin-left: 20px;
   background: url('/images/icons/medal1.svg?1381898187') 50% no-repeat;
   background-size: 100%;
 }
-/* line 73, ../sass/_audioentry.scss */
+/* line 74, ../sass/_audioentry.scss */
 .first.shadow {
   margin-left: 15px;
 }
 
-/* line 78, ../sass/_audioentry.scss */
+/* line 79, ../sass/_audioentry.scss */
 .second {
   margin-left: 70px;
   background: url('/images/icons/medal2.svg?1381898187') 50% no-repeat;
   background-size: 100%;
 }
-/* line 82, ../sass/_audioentry.scss */
+/* line 83, ../sass/_audioentry.scss */
 .second.shadow {
   margin-left: 65px;
 }
 
-/* line 87, ../sass/_audioentry.scss */
+/* line 88, ../sass/_audioentry.scss */
 .third {
   margin-left: 120px;
   background: url('/images/icons/medal3.svg?1381898187') 50% no-repeat;
   background-size: 100%;
 }
 
-/* line 93, ../sass/_audioentry.scss */
+/* line 94, ../sass/_audioentry.scss */
 .magnet-area {
   background: url('/images/icons/medalbg.svg?1381898187') 50% no-repeat;
   background-size: 88%;
@@ -681,28 +682,28 @@ form.settings {
   width: 60px;
 }
 
-/* line 103, ../sass/_audioentry.scss */
+/* line 104, ../sass/_audioentry.scss */
 .droppable {
   top: 400px;
   left: 0;
 }
 
-/* line 108, ../sass/_audioentry.scss */
+/* line 109, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }
 
-/* line 112, ../sass/_audioentry.scss */
+/* line 113, ../sass/_audioentry.scss */
 .ribbon-shadows {
   position: absolute;
   display: block;
   width: 190px;
   height: 80px;
-  right: 20px;
-  top: 450px;
+  right: -10px;
+  top: 420px;
 }
 
-/* line 122, ../sass/_audioentry.scss */
+/* line 123, ../sass/_audioentry.scss */
 .playpause {
   width: 100px;
   height: 100px;
@@ -717,15 +718,70 @@ form.settings {
   opacity: 0.4;
   z-index: 4;
 }
-/* line 131, ../sass/_audioentry.scss */
+/* line 132, ../sass/_audioentry.scss */
 .playpause.playing {
   background: url('/images/icons/checkon.svg?1381806191') 55% 50% no-repeat, white;
 }
 
-/* line 136, ../sass/_audioentry.scss */
+/* line 137, ../sass/_audioentry.scss */
 .audio-controls {
   width: 250px;
   margin: 0 auto;
+}
+
+/* line 142, ../sass/_audioentry.scss */
+.audio-option {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  width: 100%;
+  min-height: 300px;
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+/* line 151, ../sass/_audioentry.scss */
+.audio-2 {
+  margin-top: -300px;
+  margin-left: 300px;
+}
+
+/* line 156, ../sass/_audioentry.scss */
+.audio-3 {
+  margin-top: 0px;
+  margin-left: 600px;
+}
+
+/* line 161, ../sass/_audioentry.scss */
+.switcharrow {
+  position: absolute;
+  display: block;
+  margin-top: 120px;
+  width: 25px;
+  height: 35px;
+  background: url('/images/icons/dir_arrow.svg?1381806192');
+  background-size: 100%;
+  cursor: pointer;
+}
+/* line 170, ../sass/_audioentry.scss */
+.switcharrow.larr {
+  left: 5px;
+}
+/* line 173, ../sass/_audioentry.scss */
+.switcharrow.rarr {
+  right: 5px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 179, ../sass/_audioentry.scss */
+.sample-options {
+  display: block;
 }
 
 /* line 11, ../sass/_radialtimer.scss */
