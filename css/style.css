@@ -178,7 +178,7 @@ nav[data-role="header"] a {
 /* line 13, ../sass/_sidebar.scss */
 #entry-nav h3 a:after {
   content: "";
-  background: url('/images/icons/dir_arrow.svg?1381806192') no-repeat;
+  background: url('/images/icons/dir_arrow.svg?1381984877') no-repeat;
   width: 40px;
   height: 40px;
   background-size: 60%;
@@ -213,7 +213,7 @@ nav[data-role="header"] a {
 
 /* line 45, ../sass/_sidebar.scss */
 .morebtn {
-  background: url('/images/icons/menu.svg?1381806191');
+  background: url('/images/icons/menu.svg?1381984878');
   background-repeat: no-repeat;
   background-size: 80%;
   width: 50px;
@@ -285,62 +285,62 @@ a {
 
 /* line 33, ../sass/_allartists.scss */
 .childish_gambino {
-  background-image: url('/images/thumbs/childish_gambino.jpg?1381805306');
+  background-image: url('/images/thumbs/childish_gambino.jpg?1381984878');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .chvrches {
-  background-image: url('/images/thumbs/chvrches.jpg?1381805306');
+  background-image: url('/images/thumbs/chvrches.jpg?1381984878');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .daughter {
-  background-image: url('/images/thumbs/daughter.jpg?1381805306');
+  background-image: url('/images/thumbs/daughter.jpg?1381984878');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .foy_vance {
-  background-image: url('/images/thumbs/foy_vance.jpg?1381805306');
+  background-image: url('/images/thumbs/foy_vance.jpg?1381984878');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .jeremy_messersmith {
-  background-image: url('/images/thumbs/jeremy_messersmith.jpg?1381805306');
+  background-image: url('/images/thumbs/jeremy_messersmith.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .justin_nozuka {
-  background-image: url('/images/thumbs/justin_nozuka.jpg?1381805306');
+  background-image: url('/images/thumbs/justin_nozuka.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .tiny_green_cars {
-  background-image: url('/images/thumbs/tiny_green_cars.jpg?1381805306');
+  background-image: url('/images/thumbs/tiny_green_cars.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .mumford_and_sons {
-  background-image: url('/images/thumbs/mumford_and_sons.jpg?1381805306');
+  background-image: url('/images/thumbs/mumford_and_sons.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .phoenix {
-  background-image: url('/images/thumbs/phoenix.jpg?1381805306');
+  background-image: url('/images/thumbs/phoenix.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .robert_delong {
-  background-image: url('/images/thumbs/robert_delong.jpg?1381805306');
+  background-image: url('/images/thumbs/robert_delong.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .two_door_cinema_club {
-  background-image: url('/images/thumbs/two_door_cinema_club.jpg?1381805306');
+  background-image: url('/images/thumbs/two_door_cinema_club.jpg?1381984879');
 }
 
 /* line 33, ../sass/_allartists.scss */
 .temper_trap {
-  background-image: url('/images/thumbs/temper_trap.jpg?1381805306');
+  background-image: url('/images/thumbs/temper_trap.jpg?1381984879');
 }
 
 /* line 1, ../sass/_animations.scss */
@@ -428,7 +428,7 @@ a {
 
 /* line 6, ../sass/_settings.scss */
 .settingsbtn {
-  background: url('/images/icons/settings.svg?1381809021');
+  background: url('/images/icons/settings.svg?1381984878');
   background-repeat: no-repeat;
   background-size: 60%;
   width: 45px;
@@ -556,12 +556,12 @@ form.settings {
   display: block;
   background: red;
   margin: 20px 5px -15px;
-  background: url('/images/icons/checkoff.svg?1381806191') 50%;
+  background: url('/images/icons/checkoff.svg?1381984877') 50%;
   background-size: 100%;
 }
 /* line 126, ../sass/_settings.scss */
 .red-check.checked {
-  background: url('/images/icons/checkon.svg?1381806191') 50%;
+  background: url('/images/icons/checkon.svg?1381984877') 50%;
   background-size: 100%;
 }
 
@@ -572,7 +572,7 @@ form.settings {
 
 /* line 5, ../sass/_audioentry.scss */
 #single-artist {
-  background: url('/images/backgrounds/audio_background.jpg?1381806256') 26% 0;
+  background: url('/images/backgrounds/audio_background.jpg?1381984877') 26% 0;
   background-size: 110%;
 }
 
@@ -642,7 +642,7 @@ form.settings {
 /* line 69, ../sass/_audioentry.scss */
 .first {
   margin-left: 20px;
-  background: url('/images/icons/medal1.svg?1381898187') 50% no-repeat;
+  background: url('/images/icons/medal1.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
 /* line 74, ../sass/_audioentry.scss */
@@ -653,7 +653,7 @@ form.settings {
 /* line 79, ../sass/_audioentry.scss */
 .second {
   margin-left: 70px;
-  background: url('/images/icons/medal2.svg?1381898187') 50% no-repeat;
+  background: url('/images/icons/medal2.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
 /* line 83, ../sass/_audioentry.scss */
@@ -664,13 +664,13 @@ form.settings {
 /* line 88, ../sass/_audioentry.scss */
 .third {
   margin-left: 120px;
-  background: url('/images/icons/medal3.svg?1381898187') 50% no-repeat;
+  background: url('/images/icons/medal3.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
 
 /* line 94, ../sass/_audioentry.scss */
 .magnet-area {
-  background: url('/images/icons/medalbg.svg?1381898187') 50% no-repeat;
+  background: url('/images/icons/medalbg.svg?1381984877') 50% no-repeat;
   background-size: 88%;
   height: 60px;
   margin: auto;
@@ -712,7 +712,7 @@ form.settings {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background: url('/images/icons/play.svg?1381806192') 55% 50% no-repeat, white;
+  background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, white;
   background-size: 30%;
   margin: 90px auto 90px;
   opacity: 0.4;
@@ -720,7 +720,7 @@ form.settings {
 }
 /* line 132, ../sass/_audioentry.scss */
 .playpause.playing {
-  background: url('/images/icons/checkon.svg?1381806191') 55% 50% no-repeat, white;
+  background: url('/images/icons/checkon.svg?1381984877') 55% 50% no-repeat, white;
 }
 
 /* line 137, ../sass/_audioentry.scss */
@@ -761,7 +761,7 @@ form.settings {
   margin-top: 120px;
   width: 25px;
   height: 35px;
-  background: url('/images/icons/dir_arrow.svg?1381806192');
+  background: url('/images/icons/dir_arrow.svg?1381984877');
   background-size: 100%;
   cursor: pointer;
 }
