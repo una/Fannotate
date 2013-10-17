@@ -546,7 +546,7 @@ form.settings {
 /* line 113, ../sass/_settings.scss */
 .artist-setting {
   line-height: 0em;
-  margin-left: 2em;
+  margin-left: 2.5em;
 }
 
 /* line 118, ../sass/_settings.scss */
@@ -561,7 +561,8 @@ form.settings {
 }
 /* line 126, ../sass/_settings.scss */
 .red-check.checked {
-  background: url('/images/icons/checkon.svg?1381806191');
+  background: url('/images/icons/checkon.svg?1381806191') 50%;
+  background-size: 100%;
 }
 
 /* line 1, ../sass/_audioentry.scss */
@@ -571,7 +572,7 @@ form.settings {
 
 /* line 5, ../sass/_audioentry.scss */
 #single-artist {
-  background: url('/images/backgrounds/audio_background.jpg?1381806256') 30% 0;
+  background: url('/images/backgrounds/audio_background.jpg?1381806256') 26% 0;
   background-size: 110%;
 }
 
@@ -581,22 +582,29 @@ form.settings {
   text-align: center;
 }
 
-/* line 16, ../sass/_audioentry.scss */
+/* line 17, ../sass/_audioentry.scss */
+.instruction,
+.sample-name {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 23, ../sass/_audioentry.scss */
 .individual-entry {
   color: #f0f1bc;
   min-height: 400px;
 }
 
-/* line 22, ../sass/_audioentry.scss */
+/* line 29, ../sass/_audioentry.scss */
 .ribbon-container {
   width: 100%;
   height: 80px;
   display: block;
-  margin-top: 280px;
-  margin-left: 100px;
+  margin-left: 130px;
 }
 
-/* line 30, ../sass/_audioentry.scss */
+/* line 37, ../sass/_audioentry.scss */
 .droppable {
   position: absolute;
   width: 100px;
@@ -605,7 +613,7 @@ form.settings {
   bottom: 0;
 }
 
-/* line 38, ../sass/_audioentry.scss */
+/* line 45, ../sass/_audioentry.scss */
 .ribbon {
   margin: 30px 20px;
   cursor: pointer;
@@ -615,53 +623,53 @@ form.settings {
   display: inline-block;
   bottom: 0;
 }
-/* line 47, ../sass/_audioentry.scss */
+/* line 54, ../sass/_audioentry.scss */
 .ribbon:hover {
   opacity: 0.8;
 }
 
-/* line 53, ../sass/_audioentry.scss */
+/* line 60, ../sass/_audioentry.scss */
 .shadow {
   position: absolute;
   opacity: 0.2;
 }
-/* line 56, ../sass/_audioentry.scss */
+/* line 63, ../sass/_audioentry.scss */
 .shadow:hover {
   opacity: 0.2;
 }
 
-/* line 61, ../sass/_audioentry.scss */
+/* line 68, ../sass/_audioentry.scss */
 .first {
   margin-left: 20px;
-  background: url('/images/icons/medal1.svg?1381861111') 50% no-repeat;
+  background: url('/images/icons/medal1.svg?1381898187') 50% no-repeat;
   background-size: 100%;
 }
-/* line 66, ../sass/_audioentry.scss */
+/* line 73, ../sass/_audioentry.scss */
 .first.shadow {
   margin-left: 15px;
 }
 
-/* line 71, ../sass/_audioentry.scss */
+/* line 78, ../sass/_audioentry.scss */
 .second {
   margin-left: 70px;
-  background: url('/images/icons/medal2.svg?1381861111') 50% no-repeat;
+  background: url('/images/icons/medal2.svg?1381898187') 50% no-repeat;
   background-size: 100%;
 }
-/* line 75, ../sass/_audioentry.scss */
+/* line 82, ../sass/_audioentry.scss */
 .second.shadow {
   margin-left: 65px;
 }
 
-/* line 80, ../sass/_audioentry.scss */
+/* line 87, ../sass/_audioentry.scss */
 .third {
   margin-left: 120px;
-  background: url('/images/icons/medal3.svg?1381861111') 50% no-repeat;
+  background: url('/images/icons/medal3.svg?1381898187') 50% no-repeat;
   background-size: 100%;
 }
 
-/* line 86, ../sass/_audioentry.scss */
+/* line 93, ../sass/_audioentry.scss */
 .magnet-area {
-  background: url('/images/icons/medalbg.svg?1381861273') 50% no-repeat;
+  background: url('/images/icons/medalbg.svg?1381898187') 50% no-repeat;
   background-size: 88%;
   height: 60px;
   margin: auto;
@@ -673,23 +681,111 @@ form.settings {
   width: 60px;
 }
 
-/* line 96, ../sass/_audioentry.scss */
+/* line 103, ../sass/_audioentry.scss */
 .droppable {
   top: 400px;
   left: 0;
 }
 
-/* line 101, ../sass/_audioentry.scss */
+/* line 108, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }
 
-/* line 105, ../sass/_audioentry.scss */
+/* line 112, ../sass/_audioentry.scss */
 .ribbon-shadows {
   position: absolute;
   display: block;
   width: 190px;
   height: 80px;
   right: 20px;
-  top: 410px;
+  top: 450px;
+}
+
+/* line 122, ../sass/_audioentry.scss */
+.playpause {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: url('/images/icons/play.svg?1381806192') 55% 50% no-repeat, white;
+  background-size: 30%;
+  margin: 90px auto 90px;
+  opacity: 0.4;
+  z-index: 4;
+}
+/* line 131, ../sass/_audioentry.scss */
+.playpause.playing {
+  background: url('/images/icons/checkon.svg?1381806191') 55% 50% no-repeat, white;
+}
+
+/* line 136, ../sass/_audioentry.scss */
+.audio-controls {
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* line 11, ../sass/_radialtimer.scss */
+.radialtimer {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 245px;
+  left: 50%;
+  margin: -120px 0 0 -120px;
+}
+/* line 19, ../sass/_radialtimer.scss */
+.radialtimer .n {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 33, ../sass/_radialtimer.scss */
+.radialtimer .slice {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  clip: rect(0px, 240px, 240px, 120px);
+}
+/* line 39, ../sass/_radialtimer.scss */
+.radialtimer .slice.nc {
+  clip: rect(auto, auto, auto, auto);
+}
+/* line 43, ../sass/_radialtimer.scss */
+.radialtimer .slice .q {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border: 16px #655c63 solid;
+  border-radius: 50%;
+  clip: rect(0px, 120px, 120px, 0px);
+  z-index: 2;
+}
+/* line 53, ../sass/_radialtimer.scss */
+.radialtimer .slice .pie {
+  border: 15px #ff360e solid;
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  clip: rect(0px, 120px, 240px, 0px);
+  border-radius: 50%;
+  transition: all 1s linear;
+  z-index: 1;
+}
+
+/* line 67, ../sass/_radialtimer.scss */
+.behind-timer {
+  border: 16px #655c63 solid;
+  width: 208.69565px;
+  border-radius: 50%;
+  height: 208.69565px;
+  position: absolute;
+  top: 245px;
+  left: 50%;
+  margin: -120px 0 0 -120px;
 }

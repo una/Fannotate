@@ -1,0 +1,50 @@
+/* line 11, ../sass/radialtimer.scss */
+.radialtimer {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 245px;
+  left: 50%;
+  margin: -120px 0 0 -120px;
+}
+/* line 19, ../sass/radialtimer.scss */
+.radialtimer .n {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 240px;
+  font-size: 0px;
+}
+/* line 33, ../sass/radialtimer.scss */
+.radialtimer .slice {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  clip: rect(0px, 240px, 240px, 120px);
+}
+/* line 39, ../sass/radialtimer.scss */
+.radialtimer .slice.nc {
+  clip: rect(auto, auto, auto, auto);
+}
+/* line 43, ../sass/radialtimer.scss */
+.radialtimer .slice .q {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  clip: rect(0px, 120px, 120px, 0px);
+  z-index: 2;
+}
+/* line 53, ../sass/radialtimer.scss */
+.radialtimer .slice .pie {
+  border: 15px #6bc967 solid;
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  clip: rect(0px, 120px, 240px, 0px);
+  border-radius: 50%;
+  transition: all 1s linear;
+  z-index: 1;
+}

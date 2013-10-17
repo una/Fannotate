@@ -4,9 +4,17 @@ $(function(){
 	$('.sortToggle').on('click', allowSorting );
 	$('.artist-link').on('click', getArtist );
 	$('.toggle').on('click', toggleList);
+	// $('.accordion-btn').on('click', slideList);
+	$('.red-check').click(function() {
+	  $( this ).toggleClass('checked');
+	});
+
+	$('.audio-controls').on('click', playPause );
+
 	getArtistThumbs();
 	var onSort = false;
 	var toggled = false;
+	var playing = false;
 
 	function allowSorting() {
 		if (onSort) {
@@ -47,6 +55,37 @@ $(function(){
 			$($('.artist-name')[i]).prev('figure').addClass(band);
 		}
 	}
+
+	function slideList() {
+		$('#entry-nav ul').toggle();
+	}
+
+	function playPause(e) {
+		Timer = new radialTimer();
+		Timer.init("timer", 15);
+		playSong();
+		$('.playpause').addClass('playing');
+		
+
+		if (playing) {
+			pauseSong();
+			//Timer.stop(); doesnt exist
+			$('.playpause').removeClass('playing');
+			playing = false;
+		}
+
+		playing = true;
+	}
+
+	var Song1=document.getElementById("song1"); 
+	function playSong()
+	  { 
+	  	Song1.play(); 
+	  } 
+	function pauseSong()
+	  { 
+	  	Song1.pause(); 
+	  }
 	
 
 }); // end of SIAF

@@ -40,7 +40,7 @@
 	
 	<div data-role="panel" data-position="right" data-display="push" id="entry-nav">
 		  <div data-role="collapsible" data-collapsed="false">
-			<h3>Active Entries</h3>
+			<h3 class="accordion-btn">Active Entries</h3>
 			<ul class="active-entries">
 				<li><a href="#">Special Edition Vinyl Covers</a></li>
 				<li><a href="#">"Science/Visions" [Chorus Round 2]</a></li>
@@ -55,7 +55,7 @@
 		</div>
 
 		<div data-role="collapsible">
-			<h3>Past Winners</h3>
+			<h3 class="accordion-btn">Past Winners</h3>
 			<ul class="past-winners">
 				<li><a href="#">2013 US Tour Special Edition Poster</a></li>
 				<li><a href="#">2013 US Tour Shirt Design </a></li>
@@ -75,19 +75,21 @@
 
 	<div data-role="content" class="individual-entry audio">
 		<h1 class="callout">Help Us Choose</h1>
-		<h2 class="instruction">Drag the medals to rank your favorite clips</h2>
+		<h2 class="instruction">Which clip is your favorite?</h2>
 
 		<ul class="sample-options audio">
 			<li class="audio-option">
-				<div class="radial">
-					<div class="medal-stand"></div>
-				</div>
 
-				<h3 class="sample-name"> "Science/Visions" [Chorus] v.1 </h3>
-				
 				<div class="audio-controls">
-					
+					<div class="playpause"></div>
+					<div class='radialtimer' id='timer'></div>
+					<div class="behind-timer"></div>
+					<audio id="song1">
+					  <source src="audio/whatdoesthefoxsay.mp3" type="audio/mpeg">
+					  Your browser does not support the audio element.
+					</audio>
 				</div>
+				<h3 class="sample-name"> "Science/Visions" [Chorus] v.1 </h3>
 			</li>
 			<li class="audio-option">
 				
@@ -264,6 +266,7 @@
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/vendor/radialtimer.js"></script>
 	<script src="js/vendor/jquery.pep.min.js"></script>
 	<script src="js/pep.js"></script>
 	<script src="js/scripts.js"></script>

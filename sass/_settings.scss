@@ -112,7 +112,7 @@ form.settings {
 
 .artist-setting {
   line-height: 0em;
-  margin-left: 2em;
+  margin-left: 2.5em;
 }
 
 .red-check {
@@ -124,6 +124,7 @@ form.settings {
   background: image-url('icons/checkoff.svg') 50%;
   background-size: 100%;
   &.checked {
-    background: image-url('icons/checkon.svg')
+    background: image-url('icons/checkon.svg') 50%;
+    background-size: 100%;
   }
 }
