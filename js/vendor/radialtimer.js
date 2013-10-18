@@ -1,5 +1,20 @@
 function radialTimer() {
 	var self = this;
+	var paused = false;
+
+	$('.playpause').on('click', playPause);
+	function playPause(e) {
+		console.log('clicked audio controls');
+
+		if (paused) {
+			paused = true;
+		}
+
+		else if (paused == true) {
+			paused = false;
+			$(this).addClass('paused');
+		}
+	}
 
 	this.seconds = 0;
 	this.count = 0;
@@ -48,11 +63,11 @@ function radialTimer() {
 				self.pie.css({"transform":"rotate(" + self.degrees + "deg)"});
 			}
 		}, 1000);
-		
 
 		if(paused) {
-			clearInterval(self.interval);
+			clearInterval(self.interval); //wahhhhhh
 		}
+		
 	}
 }
 

@@ -725,7 +725,7 @@ form.settings {
 }
 /* line 135, ../sass/_audioentry.scss */
 .playpause.playing {
-  background: url('/images/icons/pause.svg?1382041335') 50% 50% no-repeat, white;
+  background: url('/images/icons/pause.svg?1382123687') 50% 50% no-repeat, white;
   background-size: 30%;
 }
 

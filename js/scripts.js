@@ -80,19 +80,19 @@ $(function(){
 			$(this).addClass('playing');
 				if (x==1 && firstPlay1) {
 					Timer1 = new radialTimer();
-					Timer1.init("timer1", 15);
+					Timer1.init("timer1", 10);
 					firstPlay = false;
 				}
 				else if
 					(x==2 && firstPlay2) {
 					Timer2 = new radialTimer();
-					Timer2.init("timer2", 20);
+					Timer2.init("timer2", 10);
 					firstPlay = false;
 				}
 				else if
 					(x==3 && firstPlay3) {
 					Timer3 = new radialTimer();
-					Timer3.init("timer3", 16);
+					Timer3.init("timer3", 10);
 					firstPlay = false;
 				}
 		}
