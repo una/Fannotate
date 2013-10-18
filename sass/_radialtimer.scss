@@ -11,23 +11,14 @@ $fontSize: 0px;
 .radialtimer {
         width: $sizeTimer;
         height: $sizeTimer;
-        position: absolute;
-        top: 245px;
-        left: 50%;
-        margin: -1 * ($sizeTimer / 2) 0 0 -1 * ($sizeTimer / 2);
+        margin: -260px 0 0 5px;
 
         .n {
                 position: absolute;
                 width: $sizeTimer;
                 height: $sizeTimer;
-                // background: $backgroundTimerColor;
                 border-radius: 50%;
                 text-align: center;
-                // line-height: $sizeTimer;
-                // font-family: $fontFamily;
-                // font-size: $fontSize;
-                // color: $fontColor;
-                // opacity: 0.3;
         }
 
         .slice {
@@ -69,9 +60,6 @@ $fontSize: 0px;
 	 width: $sizeTimer/1.15;
 	 border-radius: 50%;
         height: $sizeTimer/1.15;
-        position: absolute;
-        top: 245px;
-        left: 50%;
-        margin: -1 * ($sizeTimer / 2) 0 0 -1 * ($sizeTimer / 2);
+        margin: -240px 0 0 5px;
 	
 }

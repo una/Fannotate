@@ -601,8 +601,8 @@ form.settings {
   width: 100%;
   height: 80px;
   display: block;
-  margin-top: 0px;
-  margin-left: 80px;
+  margin-top: 295px;
+  margin-left: 130px;
 }
 
 /* line 38, ../sass/_audioentry.scss */
@@ -720,16 +720,17 @@ form.settings {
 }
 /* line 132, ../sass/_audioentry.scss */
 .playpause.playing {
-  background: url('/images/icons/checkon.svg?1381984877') 55% 50% no-repeat, white;
+  background: url('/images/icons/pause.svg?1382041335') 50% 50% no-repeat, white;
+  background-size: 30%;
 }
 
-/* line 137, ../sass/_audioentry.scss */
+/* line 138, ../sass/_audioentry.scss */
 .audio-controls {
   width: 250px;
   margin: 0 auto;
 }
 
-/* line 142, ../sass/_audioentry.scss */
+/* line 143, ../sass/_audioentry.scss */
 .audio-option {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -738,23 +739,23 @@ form.settings {
   width: 100%;
   min-height: 300px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto -300px;
   float: left;
 }
 
-/* line 151, ../sass/_audioentry.scss */
+/* line 155, ../sass/_audioentry.scss */
 .audio-2 {
-  margin-top: -300px;
+  margin-top: 0px;
   margin-left: 300px;
 }
 
-/* line 156, ../sass/_audioentry.scss */
+/* line 160, ../sass/_audioentry.scss */
 .audio-3 {
   margin-top: 0px;
   margin-left: 600px;
 }
 
-/* line 161, ../sass/_audioentry.scss */
+/* line 165, ../sass/_audioentry.scss */
 .switcharrow {
   position: absolute;
   display: block;
@@ -765,11 +766,11 @@ form.settings {
   background-size: 100%;
   cursor: pointer;
 }
-/* line 170, ../sass/_audioentry.scss */
+/* line 174, ../sass/_audioentry.scss */
 .switcharrow.larr {
   left: 5px;
 }
-/* line 173, ../sass/_audioentry.scss */
+/* line 177, ../sass/_audioentry.scss */
 .switcharrow.rarr {
   right: 5px;
   -webkit-transform: rotate(180deg);
@@ -779,7 +780,7 @@ form.settings {
   transform: rotate(180deg);
 }
 
-/* line 179, ../sass/_audioentry.scss */
+/* line 183, ../sass/_audioentry.scss */
 .sample-options {
   display: block;
 }
@@ -788,12 +789,9 @@ form.settings {
 .radialtimer {
   width: 240px;
   height: 240px;
-  position: absolute;
-  top: 245px;
-  left: 50%;
-  margin: -120px 0 0 -120px;
+  margin: -260px 0 0 5px;
 }
-/* line 19, ../sass/_radialtimer.scss */
+/* line 16, ../sass/_radialtimer.scss */
 .radialtimer .n {
   position: absolute;
   width: 240px;
@@ -801,18 +799,18 @@ form.settings {
   border-radius: 50%;
   text-align: center;
 }
-/* line 33, ../sass/_radialtimer.scss */
+/* line 24, ../sass/_radialtimer.scss */
 .radialtimer .slice {
   position: absolute;
   width: 240px;
   height: 240px;
   clip: rect(0px, 240px, 240px, 120px);
 }
-/* line 39, ../sass/_radialtimer.scss */
+/* line 30, ../sass/_radialtimer.scss */
 .radialtimer .slice.nc {
   clip: rect(auto, auto, auto, auto);
 }
-/* line 43, ../sass/_radialtimer.scss */
+/* line 34, ../sass/_radialtimer.scss */
 .radialtimer .slice .q {
   position: absolute;
   width: 210px;
@@ -822,7 +820,7 @@ form.settings {
   clip: rect(0px, 120px, 120px, 0px);
   z-index: 2;
 }
-/* line 53, ../sass/_radialtimer.scss */
+/* line 44, ../sass/_radialtimer.scss */
 .radialtimer .slice .pie {
   border: 15px #ff360e solid;
   position: absolute;
@@ -834,14 +832,11 @@ form.settings {
   z-index: 1;
 }
 
-/* line 67, ../sass/_radialtimer.scss */
+/* line 58, ../sass/_radialtimer.scss */
 .behind-timer {
   border: 16px #655c63 solid;
   width: 208.69565px;
   border-radius: 50%;
   height: 208.69565px;
-  position: absolute;
-  top: 245px;
-  left: 50%;
-  margin: -120px 0 0 -120px;
+  margin: -240px 0 0 5px;
 }

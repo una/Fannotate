@@ -51,7 +51,7 @@ $(function(){
 	function getArtistThumbs() {
 		for (var i=0;i<$('.artist-link').length;i++) {
 			var band = $('.artist-name')[i].innerHTML.toLowerCase().replace( /\s/g, "_");
-			console.log(band);
+			// console.log(band);
 			$($('.artist-name')[i]).prev('figure').addClass(band);
 		}
 	}
@@ -72,12 +72,16 @@ $(function(){
 			//Timer.stop(); doesnt exist
 			$('.playpause').removeClass('playing');
 			playing = false;
+
 		}
 
 		playing = true;
+		$('.audio-controls').on('click', playPause );
+
 	}
 
 	var Song1=document.getElementById("song1"); 
+
 	function playSong()
 	  { 
 	  	Song1.play(); 

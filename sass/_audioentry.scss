@@ -30,8 +30,8 @@
 	width: 100%;
 	height: 80px;
 	display: block; 
-	margin-top: 0px;
-	margin-left: 80px;
+	margin-top: 295px;
+	margin-left: 130px;
 	//figure out this positioning !!TEMP
 }
 
@@ -130,7 +130,8 @@
 	opacity: 0.4;
 	z-index: 4;
 	&.playing {
-		background: image-url('icons/checkon.svg') 55% 50% no-repeat, white; //make it pause icon
+		background: image-url('icons/pause.svg') 50% 50% no-repeat, white;
+		background-size: 30%;
 	}
 }
 
@@ -144,12 +145,15 @@
 	width: 100%;
 	min-height: 300px;
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto -300px;
 	float: left;
 }
 
+.audio-1 {
+}
+
 .audio-2 {
-	margin-top: -300px;
+	margin-top: 0px;
 	margin-left: 300px;
 }
 
