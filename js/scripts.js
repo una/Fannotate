@@ -9,12 +9,16 @@ $(function(){
 	  $( this ).toggleClass('checked');
 	});
 
-	$('.audio-controls').on('click', playPause );
+	$('.playpause').on('click', playPause );
 
 	getArtistThumbs();
 	var onSort = false;
 	var toggled = false;
 	var playing = false;
+	var x=1;
+	var firstPlay1 = true;
+	var firstPlay2 = true;
+	var firstPlay3 = true;
 
 	function allowSorting() {
 		if (onSort) {
@@ -61,37 +65,53 @@ $(function(){
 	}
 
 	function playPause(e) {
-		Timer = new radialTimer();
-		Timer.init("timer", 15);
-		playSong();
-		$('.playpause').addClass('playing');
-		
+		console.log('clicked audio controls');
 
 		if (playing) {
 			pauseSong();
 			//Timer.stop(); doesnt exist
-			$('.playpause').removeClass('playing');
+			$(this).removeClass('playing');
 			playing = false;
-
 		}
 
-		playing = true;
-		$('.audio-controls').on('click', playPause );
+		else if (playing == false) {
+			playing = true;
+			playSong();
+			$(this).addClass('playing');
+				if (x==1 && firstPlay1) {
+					Timer1 = new radialTimer();
+					Timer1.init("timer1", 15);
+					firstPlay = false;
+				}
+				else if
+					(x==2 && firstPlay2) {
+					Timer2 = new radialTimer();
+					Timer2.init("timer2", 20);
+					firstPlay = false;
+				}
+				else if
+					(x==3 && firstPlay3) {
+					Timer3 = new radialTimer();
+					Timer3.init("timer3", 16);
+					firstPlay = false;
+				}
+		}
+
+		
 
 	}
-
-	var Song1=document.getElementById("song1"); 
-
-	function playSong()
+	var Song=document.getElementById("song-1"); 
+	function playSong(num)
 	  { 
-	  	Song1.play(); 
+	  	
+	  	Song.play(); 
 	  } 
-	function pauseSong()
+	function pauseSong(num)
 	  { 
-	  	Song1.pause(); 
+	  	Song.pause(); 
 	  }
 
-	var x=1;
+	
 	function sampleNumber() {
 		
 		$('.larr').on('click', function(){
@@ -115,21 +135,30 @@ $(function(){
 		switch (x)
 		{
 		case 1:
-			$('.audio-1').css('margin-left','0px');
-			$('.audio-2').css('margin-left','300px');
-			$('.audio-3').css('margin-left','600px');
+			$('.audio-1, .droppable.one').css('margin-left','0px');
+			$('.audio-2, .droppable.two').css('margin-left','300px');
+			$('.audio-3, .droppable.three').css('margin-left','600px');
+			Song=document.getElementById("song-1"); 
 
 		  break;
 		case 2:
-			$('.audio-1').css('margin-left','-300px');
-			$('.audio-2').css('margin-left','0px');
-			$('.audio-3').css('margin-left','300px');
+			$('.audio-1, .droppable.one').css('margin-left','-300px');
+			$('.audio-2, .droppable.two').css('margin-left','0px');
+			$('.audio-3, .droppable.three').css('margin-left','300px');
+			Song=document.getElementById("song-2"); 
 		  break;
 		case 3:
-			$('.audio-1').css('margin-left','-600px');
-			$('.audio-2').css('margin-left','-300px');
-			$('.audio-3').css('margin-left','0px');
+			$('.audio-1, .droppable.one').css('margin-left','-600px');
+			$('.audio-2, .droppable.two').css('margin-left','-300px');
+			$('.audio-3, .droppable.three').css('margin-left','0px');
+			Song=document.getElementById("song-3"); 
 		  break;
+		}
+	}
+
+	function whatDropped() {
+		if ($('.droppable').hasClass('first')){
+
 		}
 	}
 	//to make the sections move, add or subtract a horizontal 300px

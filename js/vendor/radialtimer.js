@@ -51,7 +51,9 @@ function radialTimer() {
 	}
 }
 
-var Timer;
+var Timer1;
+var Timer2;
+var Timer3;
 
 // $(document).ready(function() {
 // 	Timer = new radialTimer();

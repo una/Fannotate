@@ -682,18 +682,22 @@ form.settings {
   width: 60px;
 }
 
-/* line 104, ../sass/_audioentry.scss */
+/* line 105, ../sass/_audioentry.scss */
 .droppable {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   top: 400px;
   left: 0;
 }
 
-/* line 109, ../sass/_audioentry.scss */
+/* line 111, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }
 
-/* line 113, ../sass/_audioentry.scss */
+/* line 115, ../sass/_audioentry.scss */
 .ribbon-shadows {
   position: absolute;
   display: block;
@@ -703,7 +707,7 @@ form.settings {
   top: 420px;
 }
 
-/* line 123, ../sass/_audioentry.scss */
+/* line 125, ../sass/_audioentry.scss */
 .playpause {
   width: 100px;
   height: 100px;
@@ -716,21 +720,24 @@ form.settings {
   background-size: 30%;
   margin: 90px auto 90px;
   opacity: 0.4;
+  position: relative;
   z-index: 4;
 }
-/* line 132, ../sass/_audioentry.scss */
+/* line 135, ../sass/_audioentry.scss */
 .playpause.playing {
   background: url('/images/icons/pause.svg?1382041335') 50% 50% no-repeat, white;
   background-size: 30%;
 }
 
-/* line 138, ../sass/_audioentry.scss */
+/* line 141, ../sass/_audioentry.scss */
 .audio-controls {
   width: 250px;
   margin: 0 auto;
+  z-index: 6;
+  cursor: pointer;
 }
 
-/* line 143, ../sass/_audioentry.scss */
+/* line 148, ../sass/_audioentry.scss */
 .audio-option {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -743,19 +750,21 @@ form.settings {
   float: left;
 }
 
-/* line 155, ../sass/_audioentry.scss */
-.audio-2 {
+/* line 161, ../sass/_audioentry.scss */
+.audio-2,
+.droppable.two {
   margin-top: 0px;
   margin-left: 300px;
 }
 
-/* line 160, ../sass/_audioentry.scss */
-.audio-3 {
+/* line 167, ../sass/_audioentry.scss */
+.audio-3,
+.droppable.three {
   margin-top: 0px;
   margin-left: 600px;
 }
 
-/* line 165, ../sass/_audioentry.scss */
+/* line 172, ../sass/_audioentry.scss */
 .switcharrow {
   position: absolute;
   display: block;
@@ -766,11 +775,11 @@ form.settings {
   background-size: 100%;
   cursor: pointer;
 }
-/* line 174, ../sass/_audioentry.scss */
+/* line 181, ../sass/_audioentry.scss */
 .switcharrow.larr {
   left: 5px;
 }
-/* line 177, ../sass/_audioentry.scss */
+/* line 184, ../sass/_audioentry.scss */
 .switcharrow.rarr {
   right: 5px;
   -webkit-transform: rotate(180deg);
@@ -780,7 +789,7 @@ form.settings {
   transform: rotate(180deg);
 }
 
-/* line 183, ../sass/_audioentry.scss */
+/* line 190, ../sass/_audioentry.scss */
 .sample-options {
   display: block;
 }
@@ -798,19 +807,20 @@ form.settings {
   height: 240px;
   border-radius: 50%;
   text-align: center;
+  font-size: 0px;
 }
-/* line 24, ../sass/_radialtimer.scss */
+/* line 25, ../sass/_radialtimer.scss */
 .radialtimer .slice {
   position: absolute;
   width: 240px;
   height: 240px;
   clip: rect(0px, 240px, 240px, 120px);
 }
-/* line 30, ../sass/_radialtimer.scss */
+/* line 31, ../sass/_radialtimer.scss */
 .radialtimer .slice.nc {
   clip: rect(auto, auto, auto, auto);
 }
-/* line 34, ../sass/_radialtimer.scss */
+/* line 35, ../sass/_radialtimer.scss */
 .radialtimer .slice .q {
   position: absolute;
   width: 210px;
@@ -820,7 +830,7 @@ form.settings {
   clip: rect(0px, 120px, 120px, 0px);
   z-index: 2;
 }
-/* line 44, ../sass/_radialtimer.scss */
+/* line 45, ../sass/_radialtimer.scss */
 .radialtimer .slice .pie {
   border: 15px #ff360e solid;
   position: absolute;
@@ -832,7 +842,7 @@ form.settings {
   z-index: 1;
 }
 
-/* line 58, ../sass/_radialtimer.scss */
+/* line 59, ../sass/_radialtimer.scss */
 .behind-timer {
   border: 16px #655c63 solid;
   width: 208.69565px;

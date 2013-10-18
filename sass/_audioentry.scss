@@ -92,6 +92,7 @@
 }
 
 .magnet-area {
+
 	background: image-url('icons/medalbg.svg') 50% no-repeat;
 	background-size: 88%;
 	height: $ribbon-size*2;
@@ -102,6 +103,7 @@
 }
 
 .droppable {
+	@include transition-duration(1s);
 	top: 400px;
 	left:0;
 }
@@ -128,6 +130,7 @@
 	background-size: 30%;
 	margin: 90px auto 90px;
 	opacity: 0.4;
+	position: relative;
 	z-index: 4;
 	&.playing {
 		background: image-url('icons/pause.svg') 50% 50% no-repeat, white;
@@ -138,6 +141,8 @@
 .audio-controls {
 	width: 250px;
 	margin: 0 auto;
+	z-index: 6;
+	cursor: pointer;
 }
 
 .audio-option {
@@ -152,12 +157,14 @@
 .audio-1 {
 }
 
-.audio-2 {
+.audio-2, 
+.droppable.two {
 	margin-top: 0px;
 	margin-left: 300px;
 }
 
-.audio-3 {
+.audio-3,
+ .droppable.three {
 	margin-top: 0px;
 	margin-left: 600px;
 }
