@@ -1,5 +1,5 @@
 $(function(){
- 	// Turning things on
+	// Turning things on
 	$(".all-thumbs").sortable().sortable('disable');
 	$('.sortToggle').on('click', allowSorting );
 	$('.artist-link').on('click', getArtist );
@@ -33,7 +33,7 @@ $(function(){
 		$(".all-thumbs li").addClass('shaking');
 		$('.sortToggle>.ui-btn-inner>.ui-btn-text').html('Done');
 		onSort = true;
-	 	}
+		}
 	};
 
 	function getArtist(e) {
@@ -61,7 +61,7 @@ $(function(){
 	}
 
 	function slideList() {
-		$('#entry-nav ul').toggle();
+		$('#entry-nav ul').toggle("slow");
 	}
 
 	function playPause(e) {
@@ -103,12 +103,12 @@ $(function(){
 	var Song=document.getElementById("song-1"); 
 	function playSong(num)
 	  { 
-	  	
-	  	Song.play(); 
+		
+		Song.play(); 
 	  } 
 	function pauseSong(num)
 	  { 
-	  	Song.pause(); 
+		Song.pause(); 
 	  }
 
 	
@@ -138,7 +138,11 @@ $(function(){
 			$('.audio-1, .droppable.one').css('margin-left','0px');
 			$('.audio-2, .droppable.two').css('margin-left','300px');
 			$('.audio-3, .droppable.three').css('margin-left','600px');
-			Song=document.getElementById("song-1"); 
+			Song=document.getElementById("song-1");
+			if (thisisFirst) {
+				console.log('first has first place and on first');
+				$('.ribbon-1').css({'left':'0px'});
+			}
 
 		  break;
 		case 2:
@@ -146,12 +150,20 @@ $(function(){
 			$('.audio-2, .droppable.two').css('margin-left','0px');
 			$('.audio-3, .droppable.three').css('margin-left','300px');
 			Song=document.getElementById("song-2"); 
+			if (thisisFirst) {
+				console.log('first has first place and on second');
+				$('.ribbon-1').css({'left': '-300px'});
+			}
 		  break;
 		case 3:
 			$('.audio-1, .droppable.one').css('margin-left','-600px');
 			$('.audio-2, .droppable.two').css('margin-left','-300px');
 			$('.audio-3, .droppable.three').css('margin-left','0px');
-			Song=document.getElementById("song-3"); 
+			Song=document.getElementById("song-3");
+			if (thisisFirst) {
+				console.log('first has first place and on third');
+				$('.ribbon-1').css('left', '-600px');
+			}
 		  break;
 		}
 	}
@@ -161,7 +173,49 @@ $(function(){
 
 		}
 	}
-	//to make the sections move, add or subtract a horizontal 300px
+
+	var lastRibbonMoved = "";
+
+  $('#ribbon-1, #ribbon-2, #ribbon-3').draggable({
+	// get the initial X and Y position when dragging starts
+		start: function(event, ui) {
+		  xpos = ui.position.left;
+		  ypos = ui.position.top;
+		},
+		// when dragging stops
+		stop: function(event, ui) {
+		  // calculate the dragged distance, with the current X and Y position and the "xpos" and "ypos"
+		  var xmove = ui.position.left - xpos;
+		  var ymove = ui.position.top - ypos;
+
+		  // define the moved direction: right, bottom (when positive), left, up (when negative)
+		  var xd = xmove >= 0 ? ' To right: ' : ' To left: ';
+		  var yd = ymove >= 0 ? ' Bottom: ' : ' Up: ';
+
+		  lastRibbonMoved = event.target.id;
+		  console.log(lastRibbonMoved  +' was moved,\n\n'+ xd+ xmove+ ' pixels \n'+ yd+ ymove+ ' pixels');
+		  registerVote();
+		}
+	  });
+
+  var thisisFirst = thisisSecond = thisisThird = false;
+  function registerVote() {
+  	if ($('.droppable').hasClass('pep-dpa')){
+  		console.log('something on the medal stand');
+  		if (lastRibbonMoved == "ribbon-1"){
+  			console.log('first place!');
+  			thisisFirst = true;
+  		}
+  		else if (lastRibbonMoved == "ribbon-2"){
+  			console.log('second place!');
+  			thisisSecond = true;
+  		}
+  		if (lastRibbonMoved == "ribbon-3"){
+  			console.log('third place!');
+  			thisisThird = true;
+  		}
+  	}
+  }
 
 }); // end of SIAF
 

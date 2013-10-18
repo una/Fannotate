@@ -47,7 +47,12 @@ function radialTimer() {
 			} else {
 				self.pie.css({"transform":"rotate(" + self.degrees + "deg)"});
 			}
-		}, 500); //if there are probs, change this 500 back to 1000
+		}, 1000);
+		
+
+		if(paused) {
+			clearInterval(self.interval);
+		}
 	}
 }
 
