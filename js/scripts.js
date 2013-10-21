@@ -22,7 +22,6 @@
 	var firstPlay2 = true;
 	var firstPlay3 = true;
 	var lastRibbonMoved = "";
-	var m1on1 = m1on2 = m1on3 = m2on1 = m2on2 = m2on3 = m3on1 = m3on2 = m3on3 = false;
 
 	function allowSorting() {
 		if (onSort) {
@@ -107,7 +106,6 @@
 	var Song=document.getElementById("song-1"); 
 	function playSong(num)
 	  { 
-		
 		Song.play(); 
 	  } 
 	function pauseSong(num)
@@ -132,8 +130,6 @@
 			changeSample();
 		});
 	}
-
-	
 
 	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
 
@@ -168,6 +164,7 @@
 
 		  break;
 		}
+		grantAward;
 	}
 
 //reads what medal you just moved to the stand
@@ -214,52 +211,41 @@
   			console.log('first place!');
   			firstMoved = true;
 			if (x==1) {
-				m1on1 = true;
-				// console.log('1on1');
+				grantAward('m1on1');
 			}
 			else if (x==2) {
-				m1on2 = true;
-				// console.log('1on2');
+				grantAward('m1on2');
 			}
 			else if (x==3) {
-				m1on3 = true;
-				// console.log('1on3');
+				grantAward('m1on3');
 			}
   		}
   		else if (lastRibbonMoved == "ribbon-2"){
   			console.log('second place!');
   			secondMoved = true;
   			if (x==1) {
-				m2on1 = true;
-				// console.log('m2on1')
+				grantAward('m2on1');
 			}
 			else if (x==2) {
-				m2on2 = true;
-				// console.log('m2on2')
+				grantAward('m2on2');
 			}
 			else if (x==3) {
-				m2on3 = true;
-				// console.log('m2on3')
+				grantAward('m2on3');
 			}
   		}
   		if (lastRibbonMoved == "ribbon-3"){
   			console.log('third place!');
   			thirdMoved = true;
   			if (x==1) {
-  				m3on1 = true;
-  				// console.log('m3on1')
+  				grantAward('m3on1');
   			}
   			else if (x==2) {
-  				m3on2 = true;
-  				// console.log('m3on2')
+  				grantAward('m3on2');
   			}
   			else if (x==3) {
-  				m3on3 = true;
-  				// console.log('m3on3')
+  				grantAward('m3on3');
   			}
   		}
-
-  		grantAward;
   	}
   	if (firstMoved && secondMoved && thirdMoved) {
   		console.log('submit is shown');
@@ -294,43 +280,82 @@
 	}
 
 	// using all of the possibilities of awards (i.e. m1on3)
-	function grantAward() {
+	function grantAward(result) {
+		if (firstMoved || secondMoved || thirdMoved){
+			if (firstMoved){
+				$('#ribbon-1').css('display','none');
+			}
+			if (secondMoved){
+				$('#ribbon-2').css('display','none');
+			}
+			if (thirdMoved){
+				$('#ribbon-3').css('display','none');
+			}
+		}
+
 		switch (result)
 		{
-		case m1on1:
+		case 'm1on1':	
+			if (x == 1){$('#ribbon-1').css('display','block')}
+			if (x == 2){}
+			if (x == 3){}
 			console.log(result);
 		  break;
 		
-		case m1on2:
+		case 'm1on2':
 			console.log(result);
+			if (x == 1){}
+			if (x == 2){$('#ribbon-1').css('display','block')}
+			if (x == 3){}
 		  break;
 		
-		case m1on3:
+		case 'm1on3':
 			console.log(result);
+			if (x == 1){}
+			if (x == 2){}
+			if (x == 3){$('#ribbon-1').css('display','block')}
 		  break;
 		
-		case m2on1:
+		case 'm2on1':
 			console.log(result);
+			if (x == 1){$('#ribbon-2').css('display','block')}
+			if (x == 2){}
+			if (x == 3){}
 		  break;
 		
-		case m2on2:
+		case 'm2on2':
 			console.log(result);
+			if (x == 1){}
+			if (x == 2){$('#ribbon-2').css('display','block')}
+			if (x == 3){}
 		  break;
 		
-		case m2on3:
+		case 'm2on3':
 			console.log(result);
+			if (x == 1){}
+			if (x == 2){}
+			if (x == 3){$('#ribbon-2').css('display','block')}
 		  break;
 		
-		case m3on1:
+		case 'm3on1':
 			console.log(result);
+			if (x == 1){$('#ribbon-3').css('display','block')}
+			if (x == 2){}
+			if (x == 3){}
 		  break;
 		
-		case m3on2:
+		case 'm3on2':
 			console.log(result);
+			if (x == 1){}
+			if (x == 2){$('#ribbon-3').css('display','block')}
+			if (x == 3){}
 		  break;
 		
-		case m3on3:
+		case 'm3on3':
 			console.log(result);
+			if (x == 1){}
+			if (x == 2){}
+			if (x == 3){$('#ribbon-3').css('display','block')}
 		  break;
 		}
 	}
