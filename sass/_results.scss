@@ -1,0 +1,89 @@
+.results{
+	margin: auto;
+	position: absolute;
+	top: 30pt; left: 0; right: 0;
+	width: 100%;
+	height: 100%;
+	background: image-url('backgrounds/audio_background_results.jpg') 26% 0;
+	background-size: 110%;
+	z-index: 20;
+	display: none; 
+	.image {
+		margin: 0 -7px;
+	float: left;
+  }
+  .instruction {
+	margin-bottom: 30px;
+  }
+}
+
+.result-bar {
+	width: 180px;
+	border: 4px solid $accent-mint;
+	height: 15px;
+	display: block;
+	margin: 15px 18px;
+	z-index: 1;
+}
+
+.results-bars li {
+	display: block;
+	position: absolute;
+	width: 220px;
+	left: 45px;
+}
+
+.result-line {
+	// width: (67px/180)*300;
+	@include transition-duration(3s);
+	width: 0;
+	height: 15px;
+	background-color: $accent-mint;
+	opacity: 0.5;
+}
+
+.resultat-2 {
+	margin-top: 70px;
+	.result-bar {
+		border: 4px solid $accent-red;
+		.result-line {
+			// width: (22px/180)*300;
+			background-color: $accent-red;
+		}
+	}
+}
+
+.resultat-3 {
+	margin-top: 140px;
+	.result-bar {
+		border: 4px solid $accent-purple;
+		.result-line {
+			// width: (12px/180)*300;
+			background-color: $accent-purple;
+		}
+	}
+}
+
+.votes {
+	float: right;
+	margin: -33px -15px;
+}
+
+.song-title {
+	text-align: center;
+	margin: -10px 0 10px;
+}
+
+.white-btn {
+	border: 1px solid white;
+	padding: 0.5em 0;
+	width: 240px;
+	margin: 20px auto;
+	color: white;
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	&.wb1 {
+		margin-top: 260px;
+	}
+}

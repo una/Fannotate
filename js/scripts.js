@@ -257,8 +257,33 @@
   		console.log('submit is shown');
   		$('.submit-vote').css('display','block');
   		$('.ribbon-shadows').css('display','none');
+
+  		$('.submit-vote').on('click', openResults);
+
+  		function openResults() {
+  			resultsOpen = true;
+  			$('.results').css('display','block');
+
+	  		setTimeout(function case3Function() {
+	  			$('.result-line.1').css('width','112px')
+	  			$('.result-line.2').css('width','40px')
+	  			$('.result-line.3').css('width','20px')
+	  		},300);
+  		}
   	}
   }
+
+resultsOpen = false;
+$('a').on('click', closeResults)
+
+	function closeResults() {
+		if (resultsOpen) {
+			$('.submit-vote').css('display','none');
+  			$('.ribbon-shadows').css('display','block');
+  			resultsOpen = false;
+  			$('.results').css('display','none');
+		}
+	}
 
 // }); // end of SIAF
 

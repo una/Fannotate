@@ -100,13 +100,18 @@ html, body {
 }
 
 /* line 7, ../sass/_base.scss */
+nav[data-role="header"] {
+  z-index: 40;
+}
+
+/* line 11, ../sass/_base.scss */
 section[data-role="page"] {
   position: relative;
   width: 50%;
   height: 100%;
   float: left;
 }
-/* line 13, ../sass/_base.scss */
+/* line 17, ../sass/_base.scss */
 section[data-role="page"] .ui-title {
   margin: auto;
   padding: 0.6em;
@@ -115,7 +120,7 @@ section[data-role="page"] .ui-title {
 }
 
 /* content area */
-/* line 22, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 .ui-content {
   border-width: 0;
   overflow: visible;
@@ -123,23 +128,23 @@ section[data-role="page"] .ui-title {
   padding: 5pt;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 #all-artists .ui-content {
   padding: 5pt 0 5pt 5pt;
 }
 
-/* line 33, ../sass/_base.scss */
+/* line 37, ../sass/_base.scss */
 .right {
   float: right;
   right: 0;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 42, ../sass/_base.scss */
 .ui-btn-text {
   font-size: 18px;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 .ui-title,
 section[data-role="page"] .ui-title {
   font-size: 18px;
@@ -573,26 +578,23 @@ form.settings {
   right: 20px;
   margin-top: -50px;
   padding: 0.8em 3em;
-}
-/* line 9, ../sass/_audioentry.scss */
-.submit-vote a {
   color: white;
   font-size: 16px;
 }
 
-/* line 15, ../sass/_audioentry.scss */
+/* line 12, ../sass/_audioentry.scss */
 #single-artist {
   background: url('/images/backgrounds/audio_background.jpg?1381984877') 26% 0;
   background-size: 110%;
 }
 
-/* line 20, ../sass/_audioentry.scss */
+/* line 17, ../sass/_audioentry.scss */
 .callout {
   font-size: 2em;
   text-align: center;
 }
 
-/* line 27, ../sass/_audioentry.scss */
+/* line 24, ../sass/_audioentry.scss */
 .instruction,
 .sample-name {
   width: 100%;
@@ -600,13 +602,13 @@ form.settings {
   margin-top: 10px;
 }
 
-/* line 33, ../sass/_audioentry.scss */
+/* line 30, ../sass/_audioentry.scss */
 .individual-entry {
   color: #f0f1bc;
   min-height: 400px;
 }
 
-/* line 39, ../sass/_audioentry.scss */
+/* line 36, ../sass/_audioentry.scss */
 .ribbon-container {
   width: 100%;
   height: 80px;
@@ -615,7 +617,7 @@ form.settings {
   margin-left: 130px;
 }
 
-/* line 48, ../sass/_audioentry.scss */
+/* line 45, ../sass/_audioentry.scss */
 .droppable {
   position: absolute;
   width: 100px;
@@ -624,7 +626,7 @@ form.settings {
   bottom: 0;
 }
 
-/* line 56, ../sass/_audioentry.scss */
+/* line 53, ../sass/_audioentry.scss */
 .ribbon {
   margin: 30px 20px;
   cursor: pointer;
@@ -634,51 +636,51 @@ form.settings {
   display: inline-block;
   bottom: 0;
 }
-/* line 65, ../sass/_audioentry.scss */
+/* line 62, ../sass/_audioentry.scss */
 .ribbon:hover {
   opacity: 0.8;
 }
 
-/* line 71, ../sass/_audioentry.scss */
+/* line 68, ../sass/_audioentry.scss */
 .shadow {
   position: absolute;
   opacity: 0.2;
 }
-/* line 74, ../sass/_audioentry.scss */
+/* line 71, ../sass/_audioentry.scss */
 .shadow:hover {
   opacity: 0.2;
 }
 
-/* line 79, ../sass/_audioentry.scss */
+/* line 76, ../sass/_audioentry.scss */
 .first {
   margin-left: 20px;
   background: url('/images/icons/medal1.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
-/* line 84, ../sass/_audioentry.scss */
+/* line 81, ../sass/_audioentry.scss */
 .first.shadow {
   margin-left: 15px;
 }
 
-/* line 89, ../sass/_audioentry.scss */
+/* line 86, ../sass/_audioentry.scss */
 .second {
   margin-left: 70px;
   background: url('/images/icons/medal2.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
-/* line 93, ../sass/_audioentry.scss */
+/* line 90, ../sass/_audioentry.scss */
 .second.shadow {
   margin-left: 65px;
 }
 
-/* line 98, ../sass/_audioentry.scss */
+/* line 95, ../sass/_audioentry.scss */
 .third {
   margin-left: 120px;
   background: url('/images/icons/medal3.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
 
-/* line 104, ../sass/_audioentry.scss */
+/* line 101, ../sass/_audioentry.scss */
 .magnet-area {
   background: url('/images/icons/medalbg.svg?1381984877') 50% no-repeat;
   background-size: 88%;
@@ -692,7 +694,7 @@ form.settings {
   width: 60px;
 }
 
-/* line 115, ../sass/_audioentry.scss */
+/* line 112, ../sass/_audioentry.scss */
 .droppable {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -702,12 +704,12 @@ form.settings {
   left: 0;
 }
 
-/* line 121, ../sass/_audioentry.scss */
+/* line 118, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }
 
-/* line 125, ../sass/_audioentry.scss */
+/* line 122, ../sass/_audioentry.scss */
 .ribbon-shadows {
   position: absolute;
   display: block;
@@ -717,7 +719,7 @@ form.settings {
   top: 408px;
 }
 
-/* line 135, ../sass/_audioentry.scss */
+/* line 132, ../sass/_audioentry.scss */
 .playpause {
   width: 100px;
   height: 100px;
@@ -733,13 +735,13 @@ form.settings {
   position: relative;
   z-index: 4;
 }
-/* line 145, ../sass/_audioentry.scss */
+/* line 142, ../sass/_audioentry.scss */
 .playpause.playing {
   background: url('/images/icons/pause.svg?1382123687') 50% 50% no-repeat, white;
   background-size: 30%;
 }
 
-/* line 151, ../sass/_audioentry.scss */
+/* line 148, ../sass/_audioentry.scss */
 .audio-controls {
   width: 250px;
   margin: 0 auto;
@@ -747,7 +749,7 @@ form.settings {
   cursor: pointer;
 }
 
-/* line 158, ../sass/_audioentry.scss */
+/* line 155, ../sass/_audioentry.scss */
 .audio-option {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -760,21 +762,21 @@ form.settings {
   float: left;
 }
 
-/* line 171, ../sass/_audioentry.scss */
+/* line 168, ../sass/_audioentry.scss */
 .audio-2,
 .droppable.two {
   margin-top: 0px;
   margin-left: 300px;
 }
 
-/* line 177, ../sass/_audioentry.scss */
+/* line 174, ../sass/_audioentry.scss */
 .audio-3,
 .droppable.three {
   margin-top: 0px;
   margin-left: 600px;
 }
 
-/* line 182, ../sass/_audioentry.scss */
+/* line 179, ../sass/_audioentry.scss */
 .switcharrow {
   position: absolute;
   display: block;
@@ -785,11 +787,11 @@ form.settings {
   background-size: 100%;
   cursor: pointer;
 }
-/* line 191, ../sass/_audioentry.scss */
+/* line 188, ../sass/_audioentry.scss */
 .switcharrow.larr {
   left: 5px;
 }
-/* line 194, ../sass/_audioentry.scss */
+/* line 191, ../sass/_audioentry.scss */
 .switcharrow.rarr {
   right: 5px;
   -webkit-transform: rotate(180deg);
@@ -799,7 +801,7 @@ form.settings {
   transform: rotate(180deg);
 }
 
-/* line 200, ../sass/_audioentry.scss */
+/* line 197, ../sass/_audioentry.scss */
 .sample-options {
   display: block;
 }
@@ -859,4 +861,112 @@ form.settings {
   border-radius: 50%;
   height: 208.69565px;
   margin: -240px 0 0 5px;
+}
+
+/* line 1, ../sass/_results.scss */
+.results {
+  margin: auto;
+  position: absolute;
+  top: 30pt;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/backgrounds/audio_background_results.jpg?1382321649') 26% 0;
+  background-size: 110%;
+  z-index: 20;
+  display: none;
+}
+/* line 11, ../sass/_results.scss */
+.results .image {
+  margin: 0 -7px;
+  float: left;
+}
+/* line 15, ../sass/_results.scss */
+.results .instruction {
+  margin-bottom: 30px;
+}
+
+/* line 20, ../sass/_results.scss */
+.result-bar {
+  width: 180px;
+  border: 4px solid #60f0c0;
+  height: 15px;
+  display: block;
+  margin: 15px 18px;
+  z-index: 1;
+}
+
+/* line 29, ../sass/_results.scss */
+.results-bars li {
+  display: block;
+  position: absolute;
+  width: 220px;
+  left: 45px;
+}
+
+/* line 36, ../sass/_results.scss */
+.result-line {
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  width: 0;
+  height: 15px;
+  background-color: #60f0c0;
+  opacity: 0.5;
+}
+
+/* line 45, ../sass/_results.scss */
+.resultat-2 {
+  margin-top: 70px;
+}
+/* line 47, ../sass/_results.scss */
+.resultat-2 .result-bar {
+  border: 4px solid #ff360e;
+}
+/* line 49, ../sass/_results.scss */
+.resultat-2 .result-bar .result-line {
+  background-color: #ff360e;
+}
+
+/* line 56, ../sass/_results.scss */
+.resultat-3 {
+  margin-top: 140px;
+}
+/* line 58, ../sass/_results.scss */
+.resultat-3 .result-bar {
+  border: 4px solid #72496c;
+}
+/* line 60, ../sass/_results.scss */
+.resultat-3 .result-bar .result-line {
+  background-color: #72496c;
+}
+
+/* line 67, ../sass/_results.scss */
+.votes {
+  float: right;
+  margin: -33px -15px;
+}
+
+/* line 72, ../sass/_results.scss */
+.song-title {
+  text-align: center;
+  margin: -10px 0 10px;
+}
+
+/* line 77, ../sass/_results.scss */
+.white-btn {
+  border: 1px solid white;
+  padding: 0.5em 0;
+  width: 240px;
+  margin: 20px auto;
+  color: white;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+/* line 86, ../sass/_results.scss */
+.white-btn.wb1 {
+  margin-top: 260px;
 }

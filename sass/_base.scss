@@ -4,6 +4,10 @@ html, body {
 	@extend %text-light;
 }
 
+nav[data-role="header"] {
+	z-index: 40;
+}
+
 section[data-role="page"] {
  	position: relative;
 	width: 50%;
