@@ -19,6 +19,7 @@
 	var firstPlay1 = true;
 	var firstPlay2 = true;
 	var firstPlay3 = true;
+	var lastRibbonMoved = "";
 
 	function allowSorting() {
 		if (onSort) {
@@ -133,6 +134,9 @@
 
 	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
 
+	var onFirst = "";
+	var onSecond = "";
+	var onThird = "";
 	//what happens when you move the arrows
 	function changeSample() {
 		switch (x)
@@ -145,21 +149,22 @@
 			Song=document.getElementById("song-1");
 
 			setTimeout(function case1Function() {
-				if (firstMoved) {
-					console.log('first has first place and on first');
-					$('#ribbon-1').css({'display':'block'});
+				if (lastRibbonMoved == "ribbon-1") {
+					onFirst = "first";
+					// $('#ribbon-1').css({'display':'block'});
 				}
-				if (secondMoved) {
-					console.log('first has second place and on first');
-					$('#ribbon-2').css({'display':'none'});
+				else if (lastRibbonMoved == "ribbon-2") {
+					onFirst = "second";
+					// $('#ribbon-2').css({'display':'none'});
 				}
-				if (thirdMoved) {
-					console.log('first has third place and on first');
-					$('#ribbon-3').css({'display':'none'});
+				else if (lastRibbonMoved == "ribbon-3") {
+					onFirst = "third";
+					// $('#ribbon-3').css({'display':'none'});
 				}
 			}, 900);
 
-			case1Function;
+			case1Function();
+			console.log (onFirst + "is on first sample")
 		  break;
 		case 2:
 			$('.audio-1, .droppable.one').css('margin-left','-300px');
@@ -170,21 +175,20 @@
 			Song=document.getElementById("song-2"); 
 
 			setTimeout(function case2Function() {
-				if (firstMoved) {
+				if (lastRibbonMoved == "ribbon-1") {
 					console.log('2nd has second place and on 2nd');
 					$('#ribbon-1').css({'display':'none'});
 				}
-				if (secondMoved) {
+				else if (lastRibbonMoved == "ribbon-2") {
 					console.log('2nd has second place and on 2nd');
 					$('#ribbon-2').css({'display':'block'});
 				}
-				if (thirdMoved) {
+				else if (lastRibbonMoved == "ribbon-3") {
 					console.log('2nd has second place and on 2nd');
 					$('#ribbon-3').css({'display':'none'});
 				}
 			}, 900);
 
-			case2Function;
 		  break;
 		case 3:
 			$('.audio-1, .droppable.one').css('margin-left','-600px');
@@ -194,21 +198,20 @@
 			Song=document.getElementById("song-3");
 
 			setTimeout(function case3Function() {
-				if (firstMoved) {
+				if (lastRibbonMoved == "ribbon-1") {
 					console.log('3rd has third place and on 3rd');
 					$('#ribbon-1').css({'display':'none'});
 				}
-				if (secondMoved) {
+				else if (lastRibbonMoved == "ribbon-2") {
 					console.log('3rd has third place and on 3rd');
 					$('#ribbon-2').css({'display':'none'});
 				}
-				if (thirdMoved) {
+				else if (lastRibbonMoved == "ribbon-3") {
 					console.log('3rd has third place and on 3rd');
 					$('#ribbon-3').css({'display':'block'});
 				}
 			}, 900);
 
-			case3Function;
 		  break;
 		}
 	}
@@ -219,8 +222,8 @@
 		}
 	}
 
-	var lastRibbonMoved = "";
-
+	
+	// happens on drag of these ribbons
   $('#ribbon-1, #ribbon-2, #ribbon-3').draggable({
 	// get the initial X and Y position when dragging starts
 		start: function(event, ui) {
@@ -238,7 +241,7 @@
 		  var yd = ymove >= 0 ? ' Bottom: ' : ' Up: ';
 
 		  lastRibbonMoved = event.target.id;
-		  console.log(lastRibbonMoved  +' was moved,\n\n'+ xd+ xmove+ ' pixels \n'+ yd+ ymove+ ' pixels');
+		  console.log(lastRibbonMoved  +' was moved');
 		  registerVote();
 		}
 	  });
