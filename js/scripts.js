@@ -171,15 +171,15 @@
 
 			setTimeout(function case2Function() {
 				if (firstMoved) {
-					console.log('2nd has first place and on 2nd');
+					console.log('2nd has second place and on 2nd');
 					$('#ribbon-1').css({'display':'none'});
 				}
 				if (secondMoved) {
 					console.log('2nd has second place and on 2nd');
-					$('#ribbon-2').css({'display':'none'});
+					$('#ribbon-2').css({'display':'block'});
 				}
 				if (thirdMoved) {
-					console.log('2nd has third place and on 2nd');
+					console.log('2nd has second place and on 2nd');
 					$('#ribbon-3').css({'display':'none'});
 				}
 			}, 900);
@@ -190,15 +190,16 @@
 			$('.audio-1, .droppable.one').css('margin-left','-600px');
 			$('.audio-2, .droppable.two').css('margin-left','-300px');
 			$('.audio-3, .droppable.three').css('margin-left','0px');
+			$('.droppable.three .magnet-area').css('display','block');
 			Song=document.getElementById("song-3");
 
 			setTimeout(function case3Function() {
 				if (firstMoved) {
-					console.log('3rd has first place and on 3rd');
+					console.log('3rd has third place and on 3rd');
 					$('#ribbon-1').css({'display':'none'});
 				}
 				if (secondMoved) {
-					console.log('3rd has second place and on 3rd');
+					console.log('3rd has third place and on 3rd');
 					$('#ribbon-2').css({'display':'none'});
 				}
 				if (thirdMoved) {

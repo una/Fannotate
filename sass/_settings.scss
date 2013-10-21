@@ -117,14 +117,14 @@ form.settings {
 
 .red-check {
   width: 25px;
-  height: 25px;
+  height: 26px;
   display: block;
   background: red;
   margin: 20px 5px -15px;
-  background: image-url('icons/checkoff.svg') 50%;
+  background: image-url('icons/checkoff.svg') 50% no-repeat;
   background-size: 100%;
   &.checked {
-    background: image-url('icons/checkon.svg') 50%;
+    background: image-url('icons/checkon.svg') 50% no-repeat;
     background-size: 100%;
   }
 }

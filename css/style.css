@@ -557,16 +557,16 @@ form.settings {
 /* line 118, ../sass/_settings.scss */
 .red-check {
   width: 25px;
-  height: 25px;
+  height: 26px;
   display: block;
   background: red;
   margin: 20px 5px -15px;
-  background: url('/images/icons/checkoff.svg?1381984877') 50%;
+  background: url('/images/icons/checkoff.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
 /* line 126, ../sass/_settings.scss */
 .red-check.checked {
-  background: url('/images/icons/checkon.svg?1381984877') 50%;
+  background: url('/images/icons/checkon.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
 
