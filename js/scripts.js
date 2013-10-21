@@ -12,6 +12,8 @@
 	$('.playpause').on('click', playPause );
 
 	getArtistThumbs();
+	sampleNumber();
+
 	var onSort = false;
 	var toggled = false;
 	var playing = false;
@@ -20,6 +22,7 @@
 	var firstPlay2 = true;
 	var firstPlay3 = true;
 	var lastRibbonMoved = "";
+	var m1on1 = m1on2 = m1on3 = m2on1 = m2on2 = m2on3 = m3on1 = m3on2 = m3on3 = false;
 
 	function allowSorting() {
 		if (onSort) {
@@ -112,7 +115,8 @@
 		Song.pause(); 
 	  }
 
-	
+	//tells you WHICH sample you're looking at 
+	//(on arrow click it changes)
 	function sampleNumber() {
 		
 		$('.larr').on('click', function(){
@@ -127,17 +131,14 @@
 			}
 			changeSample();
 		});
-
 	}
 
-	sampleNumber();
+	
 
 	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
 
-	var 1on1, 1on2, 1on3 = "";
-	var 2on1, 2on2, 2on3 = "";
-	var 3on1, 3on2, 3on3 = "";
-	//what happens when you move the arrows
+
+	//what physically happens when you move the arrows
 	function changeSample() {
 		switch (x)
 		{
@@ -212,18 +213,53 @@
   		if (lastRibbonMoved == "ribbon-1"){
   			console.log('first place!');
   			firstMoved = true;
-  			if (x=1) {
-
-  			}
+			if (x==1) {
+				m1on1 = true;
+				// console.log('1on1');
+			}
+			else if (x==2) {
+				m1on2 = true;
+				// console.log('1on2');
+			}
+			else if (x==3) {
+				m1on3 = true;
+				// console.log('1on3');
+			}
   		}
   		else if (lastRibbonMoved == "ribbon-2"){
   			console.log('second place!');
   			secondMoved = true;
+  			if (x==1) {
+				m2on1 = true;
+				// console.log('m2on1')
+			}
+			else if (x==2) {
+				m2on2 = true;
+				// console.log('m2on2')
+			}
+			else if (x==3) {
+				m2on3 = true;
+				// console.log('m2on3')
+			}
   		}
   		if (lastRibbonMoved == "ribbon-3"){
   			console.log('third place!');
   			thirdMoved = true;
+  			if (x==1) {
+  				m3on1 = true;
+  				// console.log('m3on1')
+  			}
+  			else if (x==2) {
+  				m3on2 = true;
+  				// console.log('m3on2')
+  			}
+  			else if (x==3) {
+  				m3on3 = true;
+  				// console.log('m3on3')
+  			}
   		}
+
+  		grantAward;
   	}
   	if (firstMoved && secondMoved && thirdMoved) {
   		console.log('submit is shown');
@@ -245,8 +281,8 @@
   	}
   }
 
-resultsOpen = false;
-$('a').on('click', closeResults)
+	resultsOpen = false;
+	$('a').on('click', closeResults);
 
 	function closeResults() {
 		if (resultsOpen) {
@@ -254,6 +290,48 @@ $('a').on('click', closeResults)
   			$('.ribbon-shadows').css('display','block');
   			resultsOpen = false;
   			$('.results').css('display','none');
+		}
+	}
+
+	// using all of the possibilities of awards (i.e. m1on3)
+	function grantAward() {
+		switch (result)
+		{
+		case m1on1:
+			console.log(result);
+		  break;
+		
+		case m1on2:
+			console.log(result);
+		  break;
+		
+		case m1on3:
+			console.log(result);
+		  break;
+		
+		case m2on1:
+			console.log(result);
+		  break;
+		
+		case m2on2:
+			console.log(result);
+		  break;
+		
+		case m2on3:
+			console.log(result);
+		  break;
+		
+		case m3on1:
+			console.log(result);
+		  break;
+		
+		case m3on2:
+			console.log(result);
+		  break;
+		
+		case m3on3:
+			console.log(result);
+		  break;
 		}
 	}
 
