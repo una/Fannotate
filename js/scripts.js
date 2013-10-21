@@ -134,9 +134,9 @@
 
 	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
 
-	var onFirst = "";
-	var onSecond = "";
-	var onThird = "";
+	var 1on1, 1on2, 1on3 = "";
+	var 2on1, 2on2, 2on3 = "";
+	var 3on1, 3on2, 3on3 = "";
 	//what happens when you move the arrows
 	function changeSample() {
 		switch (x)
@@ -147,24 +147,7 @@
 			$('.audio-3, .droppable.three').css('margin-left','600px');
 			$('.droppable.two .magnet-area').css('display','none');
 			Song=document.getElementById("song-1");
-
-			setTimeout(function case1Function() {
-				if (lastRibbonMoved == "ribbon-1") {
-					onFirst = "first";
-					// $('#ribbon-1').css({'display':'block'});
-				}
-				else if (lastRibbonMoved == "ribbon-2") {
-					onFirst = "second";
-					// $('#ribbon-2').css({'display':'none'});
-				}
-				else if (lastRibbonMoved == "ribbon-3") {
-					onFirst = "third";
-					// $('#ribbon-3').css({'display':'none'});
-				}
-			}, 900);
-
-			case1Function();
-			console.log (onFirst + "is on first sample")
+			
 		  break;
 		case 2:
 			$('.audio-1, .droppable.one').css('margin-left','-300px');
@@ -174,21 +157,6 @@
 			$('.droppable.three .magnet-area').css('display','none');
 			Song=document.getElementById("song-2"); 
 
-			setTimeout(function case2Function() {
-				if (lastRibbonMoved == "ribbon-1") {
-					console.log('2nd has second place and on 2nd');
-					$('#ribbon-1').css({'display':'none'});
-				}
-				else if (lastRibbonMoved == "ribbon-2") {
-					console.log('2nd has second place and on 2nd');
-					$('#ribbon-2').css({'display':'block'});
-				}
-				else if (lastRibbonMoved == "ribbon-3") {
-					console.log('2nd has second place and on 2nd');
-					$('#ribbon-3').css({'display':'none'});
-				}
-			}, 900);
-
 		  break;
 		case 3:
 			$('.audio-1, .droppable.one').css('margin-left','-600px');
@@ -197,31 +165,22 @@
 			$('.droppable.three .magnet-area').css('display','block');
 			Song=document.getElementById("song-3");
 
-			setTimeout(function case3Function() {
-				if (lastRibbonMoved == "ribbon-1") {
-					console.log('3rd has third place and on 3rd');
-					$('#ribbon-1').css({'display':'none'});
-				}
-				else if (lastRibbonMoved == "ribbon-2") {
-					console.log('3rd has third place and on 3rd');
-					$('#ribbon-2').css({'display':'none'});
-				}
-				else if (lastRibbonMoved == "ribbon-3") {
-					console.log('3rd has third place and on 3rd');
-					$('#ribbon-3').css({'display':'block'});
-				}
-			}, 900);
-
 		  break;
 		}
 	}
 
-	function whatDropped() {
-		if ($('.droppable').hasClass('first')){
-
+//reads what medal you just moved to the stand
+	function caseFunction() {
+		if (lastRibbonMoved == "ribbon-1") {
+			onFirst = "first";
+		}
+		else if (lastRibbonMoved == "ribbon-2") {
+			onFirst = "second";
+		}
+		else if (lastRibbonMoved == "ribbon-3") {
+			onFirst = "third";
 		}
 	}
-
 	
 	// happens on drag of these ribbons
   $('#ribbon-1, #ribbon-2, #ribbon-3').draggable({
@@ -253,6 +212,9 @@
   		if (lastRibbonMoved == "ribbon-1"){
   			console.log('first place!');
   			firstMoved = true;
+  			if (x=1) {
+
+  			}
   		}
   		else if (lastRibbonMoved == "ribbon-2"){
   			console.log('second place!');
