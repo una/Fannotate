@@ -131,6 +131,9 @@
 
 	sampleNumber();
 
+	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
+
+	//what happens when you move the arrows
 	function changeSample() {
 		switch (x)
 		{
@@ -138,6 +141,7 @@
 			$('.audio-1, .droppable.one').css('margin-left','0px');
 			$('.audio-2, .droppable.two').css('margin-left','300px');
 			$('.audio-3, .droppable.three').css('margin-left','600px');
+			$('.droppable.two .magnet-area').css('display','none');
 			Song=document.getElementById("song-1");
 
 			setTimeout(function case1Function() {
@@ -161,6 +165,8 @@
 			$('.audio-1, .droppable.one').css('margin-left','-300px');
 			$('.audio-2, .droppable.two').css('margin-left','0px');
 			$('.audio-3, .droppable.three').css('margin-left','300px');
+			$('.droppable.two .magnet-area').css('display','block');
+			$('.droppable.three .magnet-area').css('display','none');
 			Song=document.getElementById("song-2"); 
 
 			setTimeout(function case2Function() {
@@ -170,7 +176,7 @@
 				}
 				if (secondMoved) {
 					console.log('2nd has second place and on 2nd');
-					$('#ribbon-2').css({'display':'block'});
+					$('#ribbon-2').css({'display':'none'});
 				}
 				if (thirdMoved) {
 					console.log('2nd has third place and on 2nd');
