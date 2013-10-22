@@ -6,11 +6,10 @@ function radialTimer() {
 	function playPause(e) {
 		console.log('clicked audio controls');
 
-		if (paused) {
+		if (!paused) {
 			paused = true;
 		}
-
-		else if (paused == true) {
+		else {
 			paused = false;
 			$(this).addClass('paused');
 		}
@@ -50,7 +49,7 @@ function radialTimer() {
 			self.number.html(self.seconds - self.count);
 			self.count++;
 
-			if (self.count > (self.seconds - 1)) clearInterval(self.interval);
+			if (self.count > (self.seconds - 1) || paused) clearInterval(self.interval);
 
 			self.degrees = self.degrees + (360 / self.seconds);
 			if (self.count >= (self.seconds / 2)) {
@@ -73,8 +72,3 @@ function radialTimer() {
 var Timer1;
 var Timer2;
 var Timer3;
-
-// $(document).ready(function() {
-// 	Timer = new radialTimer();
-// 	Timer.init("timer", 20);
-// });

@@ -66,8 +66,7 @@
 		$('#entry-nav ul').toggle("slow");
 	}
 
-	function playPause(e) {
-		console.log('clicked audio controls');
+	function playPause(e) {		
 
 		if (playing) {
 			pauseSong();
@@ -85,14 +84,12 @@
 					Timer1.init("timer1", 10);
 					firstPlay = false;
 				}
-				else if
-					(x==2 && firstPlay2) {
+				else if (x==2 && firstPlay2) {
 					Timer2 = new radialTimer();
 					Timer2.init("timer2", 10);
 					firstPlay = false;
 				}
-				else if
-					(x==3 && firstPlay3) {
+				else if (x==3 && firstPlay3) {
 					Timer3 = new radialTimer();
 					Timer3.init("timer3", 10);
 					firstPlay = false;
