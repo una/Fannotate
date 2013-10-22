@@ -12,6 +12,8 @@
 	$('.playpause').on('click', playPause );
 
 	getArtistThumbs();
+	sampleNumber();
+
 	var onSort = false;
 	var toggled = false;
 	var playing = false;
@@ -19,6 +21,7 @@
 	var firstPlay1 = true;
 	var firstPlay2 = true;
 	var firstPlay3 = true;
+	var lastRibbonMoved = "";
 
 	function allowSorting() {
 		if (onSort) {
@@ -55,7 +58,6 @@
 	function getArtistThumbs() {
 		for (var i=0;i<$('.artist-link').length;i++) {
 			var band = $('.artist-name')[i].innerHTML.toLowerCase().replace( /\s/g, "_");
-			// console.log(band);
 			$($('.artist-name')[i]).prev('figure').addClass(band);
 		}
 	}
@@ -96,14 +98,11 @@
 					firstPlay = false;
 				}
 		}
-
-		
-
 	}
+
 	var Song=document.getElementById("song-1"); 
 	function playSong(num)
 	  { 
-		
 		Song.play(); 
 	  } 
 	function pauseSong(num)
@@ -111,9 +110,9 @@
 		Song.pause(); 
 	  }
 
-	
+	//tells you WHICH sample you're looking at 
+	//(on arrow click it changes)
 	function sampleNumber() {
-		
 		$('.larr').on('click', function(){
 			if (x > 1){
 				x-=1;
@@ -126,145 +125,72 @@
 			}
 			changeSample();
 		});
-
 	}
-
-	sampleNumber();
 
 	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
 
-	//what happens when you move the arrows
+	//what physically happens when you move the arrows
 	function changeSample() {
 		switch (x)
 		{
 		case 1:
-			$('.audio-1, .droppable.one').css('margin-left','0px');
-			$('.audio-2, .droppable.two').css('margin-left','300px');
-			$('.audio-3, .droppable.three').css('margin-left','600px');
+			$('.audio-1, .droppable.one, .onfirst').css('margin-left','0px');
+			$('.audio-2, .droppable.two, .onsecond').css('margin-left','300px');
+			$('.audio-3, .droppable.three, .onthird').css('margin-left','600px');
 			$('.droppable.two .magnet-area').css('display','none');
 			Song=document.getElementById("song-1");
-
-			setTimeout(function case1Function() {
-				if (firstMoved) {
-					console.log('first has first place and on first');
-					$('#ribbon-1').css({'display':'block'});
-				}
-				if (secondMoved) {
-					console.log('first has second place and on first');
-					$('#ribbon-2').css({'display':'none'});
-				}
-				if (thirdMoved) {
-					console.log('first has third place and on first');
-					$('#ribbon-3').css({'display':'none'});
-				}
-			}, 900);
-
-			case1Function;
 		  break;
 		case 2:
-			$('.audio-1, .droppable.one').css('margin-left','-300px');
-			$('.audio-2, .droppable.two').css('margin-left','0px');
-			$('.audio-3, .droppable.three').css('margin-left','300px');
+			$('.audio-1, .droppable.one, .onfirst').css('margin-left','-300px');
+			$('.audio-2, .droppable.two, .onsecond').css('margin-left','0px');
+			$('.audio-3, .droppable.three, .onthird').css('margin-left','300px');
 			$('.droppable.two .magnet-area').css('display','block');
 			$('.droppable.three .magnet-area').css('display','none');
 			Song=document.getElementById("song-2"); 
-
-			setTimeout(function case2Function() {
-				if (firstMoved) {
-					console.log('2nd has second place and on 2nd');
-					$('#ribbon-1').css({'display':'none'});
-				}
-				if (secondMoved) {
-					console.log('2nd has second place and on 2nd');
-					$('#ribbon-2').css({'display':'block'});
-				}
-				if (thirdMoved) {
-					console.log('2nd has second place and on 2nd');
-					$('#ribbon-3').css({'display':'none'});
-				}
-			}, 900);
-
-			case2Function;
 		  break;
 		case 3:
-			$('.audio-1, .droppable.one').css('margin-left','-600px');
-			$('.audio-2, .droppable.two').css('margin-left','-300px');
-			$('.audio-3, .droppable.three').css('margin-left','0px');
+			$('.audio-1, .droppable.one, .onfirst').css('margin-left','-600px');
+			$('.audio-2, .droppable.two, .onsecond').css('margin-left','-300px');
+			$('.audio-3, .droppable.three, .onthird').css('margin-left','0px');
 			$('.droppable.three .magnet-area').css('display','block');
 			Song=document.getElementById("song-3");
-
-			setTimeout(function case3Function() {
-				if (firstMoved) {
-					console.log('3rd has third place and on 3rd');
-					$('#ribbon-1').css({'display':'none'});
-				}
-				if (secondMoved) {
-					console.log('3rd has third place and on 3rd');
-					$('#ribbon-2').css({'display':'none'});
-				}
-				if (thirdMoved) {
-					console.log('3rd has third place and on 3rd');
-					$('#ribbon-3').css({'display':'block'});
-				}
-			}, 900);
-
-			case3Function;
 		  break;
 		}
 	}
-
-	function whatDropped() {
-		if ($('.droppable').hasClass('first')){
-
-		}
-	}
-
-	var lastRibbonMoved = "";
-
+	
+	// happens on drag of these ribbons
   $('#ribbon-1, #ribbon-2, #ribbon-3').draggable({
-	// get the initial X and Y position when dragging starts
 		start: function(event, ui) {
-		  xpos = ui.position.left;
-		  ypos = ui.position.top;
+			console.log ('on the ' + x + 'sample')
 		},
 		// when dragging stops
 		stop: function(event, ui) {
-		  // calculate the dragged distance, with the current X and Y position and the "xpos" and "ypos"
-		  var xmove = ui.position.left - xpos;
-		  var ymove = ui.position.top - ypos;
-
-		  // define the moved direction: right, bottom (when positive), left, up (when negative)
-		  var xd = xmove >= 0 ? ' To right: ' : ' To left: ';
-		  var yd = ymove >= 0 ? ' Bottom: ' : ' Up: ';
-
 		  lastRibbonMoved = event.target.id;
-		  console.log(lastRibbonMoved  +' was moved,\n\n'+ xd+ xmove+ ' pixels \n'+ yd+ ymove+ ' pixels');
-		  registerVote();
+		  console.log(lastRibbonMoved  +' was moved');
+		  registerVote(); 
 		}
 	  });
 
   var firstMoved = secondMoved = thirdMoved = false;
   function registerVote() {
   	if ($('.droppable').hasClass('pep-dpa')){
-  		console.log('something on the medal stand');
-  		if (lastRibbonMoved == "ribbon-1"){
-  			console.log('first place!');
-  			firstMoved = true;
+  		console.log(lastRibbonMoved + ' is on the medal stand');
+		if (x == 1) {
+			$('#'+lastRibbonMoved).addClass('onfirst').removeClass('draggable');
+		}
+		if (x == 2) {
+			$('#'+lastRibbonMoved).addClass('onsecond').removeClass('draggable');
+		}
+  		if (x == 3) {
+  			$('#'+lastRibbonMoved).addClass('onthird').removeClass('draggable');
   		}
-  		else if (lastRibbonMoved == "ribbon-2"){
-  			console.log('second place!');
-  			secondMoved = true;
-  		}
-  		if (lastRibbonMoved == "ribbon-3"){
-  			console.log('third place!');
-  			thirdMoved = true;
-  		}
+  		
   	}
+  	// if they're all open, show the results page
   	if (firstMoved && secondMoved && thirdMoved) {
   		console.log('submit is shown');
   		$('.submit-vote').css('display','block');
   		$('.ribbon-shadows').css('display','none');
-
   		$('.submit-vote').on('click', openResults);
 
   		function openResults() {
@@ -280,8 +206,8 @@
   	}
   }
 
-resultsOpen = false;
-$('a').on('click', closeResults)
+	resultsOpen = false;
+	$('a').on('click', closeResults);
 
 	function closeResults() {
 		if (resultsOpen) {
@@ -289,6 +215,23 @@ $('a').on('click', closeResults)
   			$('.ribbon-shadows').css('display','block');
   			resultsOpen = false;
   			$('.results').css('display','none');
+		}
+	}
+
+	// using all of the possibilities of awards (i.e. m1on3)
+	// var m1on1 = m1on2 = m1on3 = m2on1 = m2on2 = m2on3 = m3on1 = m3on2 = m3on3 = false;
+	function grantAward(result) {
+		//clears anything that was moved already
+		if (firstMoved || secondMoved || thirdMoved){
+			if (firstMoved){
+				$('#ribbon-1').css('display','none');
+			}
+			if (secondMoved){
+				$('#ribbon-2').css('display','none');
+			}
+			if (thirdMoved){
+				$('#ribbon-3').css('display','none');
+			}
 		}
 	}
 

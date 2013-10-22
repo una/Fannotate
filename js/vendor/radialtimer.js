@@ -65,7 +65,8 @@ function radialTimer() {
 		}, 1000);
 
 		if(paused) {
-			clearInterval(self.interval); //wahhhhhh
+			this.interval = null;
+			// clearInterval(self.interval); //wahhhhhh
 		}
 		
 	}
