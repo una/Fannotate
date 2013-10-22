@@ -177,12 +177,15 @@
   		console.log(lastRibbonMoved + ' is on the medal stand');
 		if (x == 1) {
 			$('#'+lastRibbonMoved).addClass('onfirst').removeClass('draggable');
+			$('.playpause.1').addClass(lastRibbonMoved);
 		}
 		if (x == 2) {
 			$('#'+lastRibbonMoved).addClass('onsecond').removeClass('draggable');
+			$('.playpause.2').addClass(lastRibbonMoved);
 		}
   		if (x == 3) {
   			$('#'+lastRibbonMoved).addClass('onthird').removeClass('draggable');
+  			$('.playpause.3').addClass(lastRibbonMoved);
   		}
   		
   	}

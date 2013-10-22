@@ -682,7 +682,7 @@ form.settings {
 
 /* line 101, ../sass/_audioentry.scss */
 .magnet-area {
-  background: url('/images/icons/medalbg.svg?1381984877') 45% no-repeat;
+  background: url('/images/icons/medalbg.svg?1382403050') 45% no-repeat;
   background-size: 88%;
   height: 60px;
   margin: auto;
@@ -820,6 +820,37 @@ form.settings {
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
+}
+
+/* line 210, ../sass/_audioentry.scss */
+.playpause.ribbon-1 {
+  background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, #60f0c0;
+  background-size: 30%;
+}
+/* line 213, ../sass/_audioentry.scss */
+.playpause.ribbon-1.playing {
+  background: url('/images/icons/pause.svg?1382123687') 55% 50% no-repeat, #60f0c0;
+  background-size: 30%;
+}
+/* line 218, ../sass/_audioentry.scss */
+.playpause.ribbon-2 {
+  background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, #ff360e;
+  background-size: 30%;
+}
+/* line 221, ../sass/_audioentry.scss */
+.playpause.ribbon-2.playing {
+  background: url('/images/icons/pause.svg?1382123687') 55% 50% no-repeat, #ff360e;
+  background-size: 30%;
+}
+/* line 226, ../sass/_audioentry.scss */
+.playpause.ribbon-3 {
+  background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, #72496c;
+  background-size: 30%;
+}
+/* line 229, ../sass/_audioentry.scss */
+.playpause.ribbon-3.playing {
+  background: url('/images/icons/pause.svg?1382123687') 55% 50% no-repeat, #72496c;
+  background-size: 30%;
 }
 
 /* line 11, ../sass/_radialtimer.scss */

@@ -205,3 +205,30 @@
 .onthird {
 	@include transition-duration(1s);
 }
+
+.playpause {
+	&.ribbon-1 {
+		background: image-url('icons/play.svg') 55% 50% no-repeat, $accent-mint;
+		background-size: 30%;
+		&.playing {
+			background: image-url('icons/pause.svg') 55% 50% no-repeat, $accent-mint;
+			background-size: 30%;
+		}
+	}
+	&.ribbon-2 {
+		background: image-url('icons/play.svg') 55% 50% no-repeat, $accent-red;
+		background-size: 30%;
+		&.playing {
+			background: image-url('icons/pause.svg') 55% 50% no-repeat, $accent-red;
+			background-size: 30%;
+		}
+	}
+	&.ribbon-3 {
+		background: image-url('icons/play.svg') 55% 50% no-repeat, $accent-purple;
+		background-size: 30%;
+		&.playing {
+			background: image-url('icons/pause.svg') 55% 50% no-repeat, $accent-purple;
+			background-size: 30%;
+		}
+	}
+}
