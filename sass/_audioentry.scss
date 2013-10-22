@@ -101,6 +101,9 @@
 	margin-left: 120px;
 	background: image-url('icons/medal3.svg') 50% no-repeat;
 	background-size: 100%;
+	&.shadow {
+		margin-left: 115px;
+	}
 }
 
 .magnet-area {

@@ -150,6 +150,11 @@ section[data-role="page"] .ui-title {
   font-size: 18px;
 }
 
+/* line 51, ../sass/_base.scss */
+.clearfix {
+  clear: both;
+}
+
 /* line 1, ../sass/_header.scss */
 nav[data-role="header"] {
   z-index: 2;
@@ -685,8 +690,12 @@ form.settings {
   background: url('/images/icons/medal3.svg?1381984877') 50% no-repeat;
   background-size: 100%;
 }
+/* line 104, ../sass/_audioentry.scss */
+.third.shadow {
+  margin-left: 115px;
+}
 
-/* line 106, ../sass/_audioentry.scss */
+/* line 109, ../sass/_audioentry.scss */
 .magnet-area {
   background: url('/images/icons/medalbg.svg?1382405722') 45% no-repeat;
   background-size: 88%;
@@ -706,7 +715,7 @@ form.settings {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-/* line 119, ../sass/_audioentry.scss */
+/* line 122, ../sass/_audioentry.scss */
 .droppable {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -716,12 +725,12 @@ form.settings {
   left: 0;
 }
 
-/* line 125, ../sass/_audioentry.scss */
+/* line 128, ../sass/_audioentry.scss */
 .choices {
   position: absolute;
 }
 
-/* line 129, ../sass/_audioentry.scss */
+/* line 132, ../sass/_audioentry.scss */
 .ribbon-shadows {
   position: absolute;
   display: block;
@@ -731,7 +740,7 @@ form.settings {
   top: 408px;
 }
 
-/* line 139, ../sass/_audioentry.scss */
+/* line 142, ../sass/_audioentry.scss */
 .playpause {
   width: 100px;
   height: 100px;
@@ -747,13 +756,13 @@ form.settings {
   position: relative;
   z-index: 4;
 }
-/* line 149, ../sass/_audioentry.scss */
+/* line 152, ../sass/_audioentry.scss */
 .playpause.playing {
   background: url('/images/icons/pause.svg?1382123687') 50% 50% no-repeat, white;
   background-size: 30%;
 }
 
-/* line 155, ../sass/_audioentry.scss */
+/* line 158, ../sass/_audioentry.scss */
 .audio-controls {
   width: 250px;
   margin: 0 auto;
@@ -761,7 +770,7 @@ form.settings {
   cursor: pointer;
 }
 
-/* line 162, ../sass/_audioentry.scss */
+/* line 165, ../sass/_audioentry.scss */
 .audio-option {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -774,21 +783,21 @@ form.settings {
   float: left;
 }
 
-/* line 175, ../sass/_audioentry.scss */
+/* line 178, ../sass/_audioentry.scss */
 .audio-2,
 .droppable.two {
   margin-top: 0px;
   margin-left: 300px;
 }
 
-/* line 181, ../sass/_audioentry.scss */
+/* line 184, ../sass/_audioentry.scss */
 .audio-3,
 .droppable.three {
   margin-top: 0px;
   margin-left: 600px;
 }
 
-/* line 186, ../sass/_audioentry.scss */
+/* line 189, ../sass/_audioentry.scss */
 .switcharrow {
   position: absolute;
   display: block;
@@ -799,11 +808,11 @@ form.settings {
   background-size: 100%;
   cursor: pointer;
 }
-/* line 195, ../sass/_audioentry.scss */
+/* line 198, ../sass/_audioentry.scss */
 .switcharrow.larr {
   left: 5px;
 }
-/* line 198, ../sass/_audioentry.scss */
+/* line 201, ../sass/_audioentry.scss */
 .switcharrow.rarr {
   right: 5px;
   -webkit-transform: rotate(180deg);
@@ -813,12 +822,12 @@ form.settings {
   transform: rotate(180deg);
 }
 
-/* line 204, ../sass/_audioentry.scss */
+/* line 207, ../sass/_audioentry.scss */
 .sample-options {
   display: block;
 }
 
-/* line 210, ../sass/_audioentry.scss */
+/* line 213, ../sass/_audioentry.scss */
 .onfirst,
 .onsecond,
 .onthird {
@@ -828,50 +837,50 @@ form.settings {
   transition-duration: 1s;
 }
 
-/* line 215, ../sass/_audioentry.scss */
+/* line 218, ../sass/_audioentry.scss */
 .playpause.ribbon-1 {
   background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, #60f0c0;
   background-size: 30%;
 }
-/* line 218, ../sass/_audioentry.scss */
+/* line 221, ../sass/_audioentry.scss */
 .playpause.ribbon-1 + .radialtimer > .slice > .pie {
   border: 15px solid #60f0c0;
 }
-/* line 221, ../sass/_audioentry.scss */
+/* line 224, ../sass/_audioentry.scss */
 .playpause.ribbon-1.playing {
   background: url('/images/icons/pause.svg?1382123687') 50% 50% no-repeat, #60f0c0;
   background-size: 30%;
 }
-/* line 226, ../sass/_audioentry.scss */
+/* line 229, ../sass/_audioentry.scss */
 .playpause.ribbon-2 {
   background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, #ff360e;
   background-size: 30%;
 }
-/* line 229, ../sass/_audioentry.scss */
+/* line 232, ../sass/_audioentry.scss */
 .playpause.ribbon-2 + .radialtimer > .slice > .pie {
   border: 15px solid #ff360e;
 }
-/* line 232, ../sass/_audioentry.scss */
+/* line 235, ../sass/_audioentry.scss */
 .playpause.ribbon-2.playing {
   background: url('/images/icons/pause.svg?1382123687') 50% 50% no-repeat, #ff360e;
   background-size: 30%;
 }
-/* line 237, ../sass/_audioentry.scss */
+/* line 240, ../sass/_audioentry.scss */
 .playpause.ribbon-3 {
   background: url('/images/icons/play.svg?1381984878') 55% 50% no-repeat, #72496c;
   background-size: 30%;
 }
-/* line 240, ../sass/_audioentry.scss */
+/* line 243, ../sass/_audioentry.scss */
 .playpause.ribbon-3 + .radialtimer > .slice > .pie {
   border: 15px solid #72496c;
 }
-/* line 243, ../sass/_audioentry.scss */
+/* line 246, ../sass/_audioentry.scss */
 .playpause.ribbon-3.playing {
   background: url('/images/icons/pause.svg?1382123687') 50% 50% no-repeat, #72496c;
   background-size: 30%;
 }
 
-/* line 250, ../sass/_audioentry.scss */
+/* line 253, ../sass/_audioentry.scss */
 .audio-option-nav {
   display: block;
   position: absolute;
@@ -881,7 +890,7 @@ form.settings {
   height: 30px;
 }
 
-/* line 259, ../sass/_audioentry.scss */
+/* line 262, ../sass/_audioentry.scss */
 .nav-show {
   width: 15px;
   height: 15px;
@@ -897,7 +906,7 @@ form.settings {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 269, ../sass/_audioentry.scss */
+/* line 272, ../sass/_audioentry.scss */
 .nav-show.on {
   background-color: rgba(240, 241, 188, 0.7);
 }
@@ -1098,4 +1107,9 @@ form.settings {
 .tshirt.sample-name {
   margin-top: 275px;
   margin-bottom: -275px;
+}
+
+/* line 38, ../sass/_tshirt.scss */
+.ribbon-push {
+  margin-top: 300px;
 }

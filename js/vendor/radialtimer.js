@@ -63,10 +63,6 @@ function radialTimer() {
 			}
 		}, 1000);
 	}
-	if(playing) { // if you click on it while its playing
-			console.log('playing yyay');
-			clearInterval(self.interval); //wahhhhhh
-	}
 }
 
 var Timer1;

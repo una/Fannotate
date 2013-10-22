@@ -11,6 +11,16 @@ $(function(){
 
 	$('.playpause').on('click', playPause );
 
+	$(document).ready(function() {
+		$('#ribbon-1.tshirt').css({'margin-top':'418px', 'margin-left':  '155px'});
+		$('#ribbon-2.tshirt').css({'margin-top':'418px', 'margin-left':  '205px'});
+		$('#ribbon-3.tshirt').css({'margin-top':'418px', 'margin-left':  '255px'});
+	});
+
+	$('#ribbon-1.tshirt, #ribbon-2.tshirt, #ribbon-3.tshirt').on('mousedown', function(){
+		$(this).css({'margin-top':'0', 'margin-left':  '0'});
+	});
+
 	getArtistThumbs();
 	sampleNumber();
 
