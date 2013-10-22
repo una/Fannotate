@@ -1,0 +1,65 @@
+@import "compass/reset";
+@import "compass/css3";
+
+// VARS
+$ribbon-size: 30px;
+
+.ribbon-container {
+	background: blue;
+	width: 70%;
+	float: right;
+	height: 80px;
+	display: block;
+}
+
+.choices {
+	background: green;
+	width: 30%;
+	height: 80px;
+	display: block;
+}
+
+.ribbon {
+	@include border-radius(50%);
+	background: white;
+	margin: 30px 20px;
+	cursor: pointer;
+	height: $ribbon-size;
+	text-align: center;
+	width: $ribbon-size;
+	z-index: 5;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.first {
+	margin-left: 20px;
+}
+
+.second {
+	margin-left: 70px;
+}
+
+.third {
+	margin-left: 120px;
+}
+
+.droppable {
+	@include border-radius(50%);
+	background: pink;
+	height: $ribbon-size*4;
+	margin: auto;
+	position: absolute;
+	width: $ribbon-size*4;
+	bottom: 30px;
+	left: 30px;
+}
+
+.pep {
+	margin-top: 400px;
+}
+
+.choices {
+	position: absolute;
+}
