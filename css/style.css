@@ -871,23 +871,22 @@ form.settings {
   left: 0;
   right: 0;
   width: 100%;
-  height: 100%;
   background: url('/images/backgrounds/audio_background_results.jpg?1382328451') 26% 0;
   background-size: 110%;
   z-index: 20;
   display: none;
 }
-/* line 11, ../sass/_results.scss */
+/* line 10, ../sass/_results.scss */
 .results .image {
   margin: 0 -7px;
   float: left;
 }
-/* line 15, ../sass/_results.scss */
+/* line 14, ../sass/_results.scss */
 .results .instruction {
   margin-bottom: 30px;
 }
 
-/* line 20, ../sass/_results.scss */
+/* line 19, ../sass/_results.scss */
 .result-bar {
   width: 180px;
   border: 4px solid #60f0c0;
@@ -897,7 +896,7 @@ form.settings {
   z-index: 1;
 }
 
-/* line 29, ../sass/_results.scss */
+/* line 28, ../sass/_results.scss */
 .results-bars li {
   display: block;
   position: absolute;
@@ -905,7 +904,7 @@ form.settings {
   left: 45px;
 }
 
-/* line 36, ../sass/_results.scss */
+/* line 35, ../sass/_results.scss */
 .result-line {
   -webkit-transition-duration: 3s;
   -moz-transition-duration: 3s;
@@ -917,45 +916,45 @@ form.settings {
   opacity: 0.5;
 }
 
-/* line 45, ../sass/_results.scss */
+/* line 44, ../sass/_results.scss */
 .resultat-2 {
   margin-top: 70px;
 }
-/* line 47, ../sass/_results.scss */
+/* line 46, ../sass/_results.scss */
 .resultat-2 .result-bar {
   border: 4px solid #ff360e;
 }
-/* line 49, ../sass/_results.scss */
+/* line 48, ../sass/_results.scss */
 .resultat-2 .result-bar .result-line {
   background-color: #ff360e;
 }
 
-/* line 56, ../sass/_results.scss */
+/* line 55, ../sass/_results.scss */
 .resultat-3 {
   margin-top: 140px;
 }
-/* line 58, ../sass/_results.scss */
+/* line 57, ../sass/_results.scss */
 .resultat-3 .result-bar {
   border: 4px solid #72496c;
 }
-/* line 60, ../sass/_results.scss */
+/* line 59, ../sass/_results.scss */
 .resultat-3 .result-bar .result-line {
   background-color: #72496c;
 }
 
-/* line 67, ../sass/_results.scss */
+/* line 66, ../sass/_results.scss */
 .votes {
   float: right;
   margin: -33px -15px;
 }
 
-/* line 72, ../sass/_results.scss */
+/* line 71, ../sass/_results.scss */
 .song-title {
   text-align: center;
   margin: -10px 0 10px;
 }
 
-/* line 77, ../sass/_results.scss */
+/* line 76, ../sass/_results.scss */
 .white-btn {
   border: 1px solid white;
   padding: 0.5em 0;
@@ -966,7 +965,7 @@ form.settings {
   display: block;
   text-align: center;
 }
-/* line 86, ../sass/_results.scss */
+/* line 85, ../sass/_results.scss */
 .white-btn.wb1 {
   margin-top: 260px;
 }
