@@ -66,8 +66,7 @@
 		$('#entry-nav ul').toggle("slow");
 	}
 
-	function playPause(e) {		
-
+	function playPause(e) {
 		if (playing) {
 			pauseSong();
 			//Timer.stop(); doesnt exist
@@ -184,6 +183,15 @@
   			$('#'+lastRibbonMoved).addClass('onthird').removeClass('draggable');
   			$('.playpause.3').addClass(lastRibbonMoved);
   		}
+  		if (lastRibbonMoved == "ribbon-1") {
+  			firstMoved = true;
+  		}
+  		if (lastRibbonMoved == "ribbon-2") {
+  			secondMoved = true;
+  		}
+  		if (lastRibbonMoved == "ribbon-3") {
+  			thirdMoved = true;
+  		}
   		
   	}
   	// if they're all open, show the results page
@@ -215,23 +223,6 @@
   			$('.ribbon-shadows').css('display','block');
   			resultsOpen = false;
   			$('.results').css('display','none');
-		}
-	}
-
-	// using all of the possibilities of awards (i.e. m1on3)
-	// var m1on1 = m1on2 = m1on3 = m2on1 = m2on2 = m2on3 = m3on1 = m3on2 = m3on3 = false;
-	function grantAward(result) {
-		//clears anything that was moved already
-		if (firstMoved || secondMoved || thirdMoved){
-			if (firstMoved){
-				$('#ribbon-1').css('display','none');
-			}
-			if (secondMoved){
-				$('#ribbon-2').css('display','none');
-			}
-			if (thirdMoved){
-				$('#ribbon-3').css('display','none');
-			}
 		}
 	}
 

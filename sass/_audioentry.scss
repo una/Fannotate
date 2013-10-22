@@ -210,6 +210,9 @@
 	&.ribbon-1 {
 		background: image-url('icons/play.svg') 55% 50% no-repeat, $accent-mint;
 		background-size: 30%;
+		&+.radialtimer>.slice>.pie {
+			border: 15px solid $accent-mint;
+		}
 		&.playing {
 			background: image-url('icons/pause.svg') 55% 50% no-repeat, $accent-mint;
 			background-size: 30%;
@@ -218,6 +221,9 @@
 	&.ribbon-2 {
 		background: image-url('icons/play.svg') 55% 50% no-repeat, $accent-red;
 		background-size: 30%;
+		&+.radialtimer>.slice>.pie {
+			border: 15px solid $accent-red;
+		}
 		&.playing {
 			background: image-url('icons/pause.svg') 55% 50% no-repeat, $accent-red;
 			background-size: 30%;
@@ -226,6 +232,9 @@
 	&.ribbon-3 {
 		background: image-url('icons/play.svg') 55% 50% no-repeat, $accent-purple;
 		background-size: 30%;
+		&+.radialtimer>.slice>.pie {
+			border: 15px solid $accent-purple;
+		}
 		&.playing {
 			background: image-url('icons/pause.svg') 55% 50% no-repeat, $accent-purple;
 			background-size: 30%;
