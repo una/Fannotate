@@ -100,13 +100,15 @@
 
 .magnet-area {
 
-	background: image-url('icons/medalbg.svg') 50% no-repeat;
+	background: image-url('icons/medalbg.svg') 45% no-repeat;
 	background-size: 88%;
 	height: $ribbon-size*2;
 	margin: auto;
 	position: absolute;
 	top:0; bottom:0; left:0; right:0;
 	width: $ribbon-size*2;
+	@include border-radius(50%);
+	border: 2px solid rgba(255,255,255,0.5);
 }
 
 .droppable {
@@ -198,8 +200,8 @@
 	display: block;
 }
 
-#ribbon-1,
-#ribbon-2,
-#ribbon-3 {
-
+.onfirst,
+.onsecond,
+.onthird {
+	@include transition-duration(1s);
 }
