@@ -4,7 +4,6 @@ function radialTimer() {
 
 	$('.playpause').on('click', playPause);
 	function playPause(e) {
-		console.log('clicked audio controls');
 
 		if (!paused) {
 			paused = true;

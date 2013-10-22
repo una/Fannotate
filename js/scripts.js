@@ -173,12 +173,10 @@ $(function(){
 	// happens on drag of these ribbons
   $('#ribbon-1, #ribbon-2, #ribbon-3').draggable({
 		start: function(event, ui) {
-			console.log ('on the ' + x + 'sample')
 		},
 		// when dragging stops
 		stop: function(event, ui) {
 		  lastRibbonMoved = event.target.id;
-		  console.log(lastRibbonMoved  +' was moved');
 		  registerVote(); 
 		}
 	  });
@@ -212,7 +210,6 @@ $(function(){
   	}
   	// if they're all open, show the results page
   	if (firstMoved && secondMoved && thirdMoved) {
-  		console.log('submit is shown');
   		$('.submit-vote').css('display','block');
   		$('.ribbon-shadows').css('display','none');
   		$('.submit-vote').on('click', openResults);
