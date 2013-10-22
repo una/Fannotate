@@ -144,6 +144,7 @@
 			$('.audio-3, .droppable.three').css('margin-left','600px');
 			$('.droppable.two .magnet-area').css('display','none');
 			Song=document.getElementById("song-1");
+			$('#'+lastRibbonMoved).addClass('onfirst');
 			
 		  break;
 		case 2:
@@ -153,6 +154,7 @@
 			$('.droppable.two .magnet-area').css('display','block');
 			$('.droppable.three .magnet-area').css('display','none');
 			Song=document.getElementById("song-2"); 
+			$('#'+lastRibbonMoved).addClass('onsecond');
 
 		  break;
 		case 3:
@@ -161,60 +163,9 @@
 			$('.audio-3, .droppable.three').css('margin-left','0px');
 			$('.droppable.three .magnet-area').css('display','block');
 			Song=document.getElementById("song-3");
+			$('#'+lastRibbonMoved).addClass('onthird');
 
 		  break;
-		}
-		// if (lastRibbonMoved == "ribbon-1"){
-		// 	console.log('first place!');
-		// 	firstMoved = true;
-		// 	if (x==1) {
-		// 		grantAward('m1on1');
-		// 	}
-		// 	else if (x==2) {
-		// 		grantAward('m1on2');
-		// 	}
-		// 	else if (x==3) {
-		// 		grantAward('m1on3');
-		// 	}
-		// }
-		// else if (lastRibbonMoved == "ribbon-2"){
-		// 	console.log('second place!');
-		// 	secondMoved = true;
-		// 	if (x==1) {
-		// 	grantAward('m2on1');
-		// 	}
-		// 	else if (x==2) {
-		// 		grantAward('m2on2');
-		// 	}
-		// 	else if (x==3) {
-		// 		grantAward('m2on3');
-		// 	}
-		// }
-		// if (lastRibbonMoved == "ribbon-3"){
-		// 	console.log('third place!');
-		// 	thirdMoved = true;
-		// 	if (x==1) {
-		// 		grantAward('m3on1');
-		// 	}
-		// 	else if (x==2) {
-		// 		grantAward('m3on2');
-		// 	}
-		// 	else if (x==3) {
-		// 		grantAward('m3on3');
-		// 	}
-		// }
-	}
-
-//reads what medal you just moved to the stand
-	function caseFunction() {
-		if (lastRibbonMoved == "ribbon-1") {
-			onFirst = "first";
-		}
-		else if (lastRibbonMoved == "ribbon-2") {
-			onFirst = "second";
-		}
-		else if (lastRibbonMoved == "ribbon-3") {
-			onFirst = "third";
 		}
 	}
 	
@@ -228,14 +179,6 @@
 		},
 		// when dragging stops
 		stop: function(event, ui) {
-		  // calculate the dragged distance, with the current X and Y position and the "xpos" and "ypos"
-		  var xmove = ui.position.left - xpos;
-		  var ymove = ui.position.top - ypos;
-
-		  // define the moved direction: right, bottom (when positive), left, up (when negative)
-		  var xd = xmove >= 0 ? ' To right: ' : ' To left: ';
-		  var yd = ymove >= 0 ? ' Bottom: ' : ' Up: ';
-
 		  lastRibbonMoved = event.target.id;
 		  console.log(lastRibbonMoved  +' was moved');
 		  registerVote();
@@ -283,7 +226,7 @@
 	// using all of the possibilities of awards (i.e. m1on3)
 	var m1on1 = m1on2 = m1on3 = m2on1 = m2on2 = m2on3 = m3on1 = m3on2 = m3on3 = false;
 	function grantAward(result) {
-		//clears anything that was moved
+		//clears anything that was moved already
 		if (firstMoved || secondMoved || thirdMoved){
 			if (firstMoved){
 				$('#ribbon-1').css('display','none');
@@ -295,81 +238,6 @@
 				$('#ribbon-3').css('display','none');
 			}
 		}
-
-		// switch (result)
-		// {
-		// case 'm1on1':	
-		// 	if (x == 1){$('#ribbon-1').css('display','block')}
-		// 	if (x == 2){}
-		// 	if (x == 3){}
-		// 	console.log(result);
-		// 	m1on1 = true;
-		//   break;
-		
-		// case 'm1on2':
-		// 	console.log(result);
-		// 	m1on2 = true;
-		// 	if (x == 1){}
-		// 	if (x == 2){$('#ribbon-2').css('display','block')}
-		// 	if (x == 3){}
-		//   break;
-		
-		// case 'm1on3':
-		// 	console.log(result);
-		// 	m1on3 = true;
-		// 	if (x == 1){}
-		// 	if (x == 2){}
-		// 	if (x == 3){$('#ribbon-3').css('display','block')}
-		//   break;
-		
-		// case 'm2on1':
-		// 	console.log(result);
-		// 	if (x == 1){$('#ribbon-1').css('display','block')}
-		// 	if (x == 2){}
-		// 	if (x == 3){}
-		// 	m2on1 = true;
-		//   break;
-		
-		// case 'm2on2':
-		// 	console.log(result);
-		// 	if (x == 1){}
-		// 	if (x == 2){$('#ribbon-2').css('display','block')}
-		// 	if (x == 3){}
-		// 	m2on2 = true;
-		//   break;
-		
-		// case 'm2on3':
-		// 	console.log(result);
-		// 	if (x == 1){}
-		// 	if (x == 2){}
-		// 	if (x == 3){$('#ribbon-3').css('display','block')}
-		// 	m2on3 = true;
-		//   break;
-		
-		// case 'm3on1':
-		// 	console.log(result);
-		// 	if (x == 1){$('#ribbon-1').css('display','block')}
-		// 	if (x == 2){}
-		// 	if (x == 3){}
-		// 	m3on1 = true;
-		//   break;
-		
-		// case 'm3on2':
-		// 	console.log(result);
-		// 	if (x == 1){}
-		// 	if (x == 2){$('#ribbon-2').css('display','block')}
-		// 	if (x == 3){}
-		// 	m3on2 = true;
-		//   break;
-		
-		// case 'm3on3':
-		// 	console.log(result);
-		// 	if (x == 1){}
-		// 	if (x == 2){}
-		// 	if (x == 3){$('#ribbon-3').css('display','block')}
-		// 	m3on3 = true;
-		//   break;
-		// }
 	}
 
 // }); // end of SIAF
