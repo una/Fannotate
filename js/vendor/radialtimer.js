@@ -63,12 +63,10 @@ function radialTimer() {
 				self.pie.css({"transform":"rotate(" + self.degrees + "deg)"});
 			}
 		}, 1000);
-
-		if(paused) {
-			this.interval = null;
-			// clearInterval(self.interval); //wahhhhhh
-		}
-		
+	}
+	if(playing) { // if you click on it while its playing
+			console.log('playing yyay');
+			clearInterval(self.interval); //wahhhhhh
 	}
 }
 
