@@ -123,8 +123,7 @@
 		});
 	}
 
-	$('.droppable.two .magnet-area').css('display','block'); // fixes sidebar bug
-
+	$('.droppable.two .magnet-area').css('display','none'); // fixes sidebar bug
 	//what physically happens when you move the arrows
 	function changeSample() {
 		switch (x)
@@ -134,6 +133,8 @@
 			$('.audio-2, .droppable.two, .onsecond').css('margin-left','300px');
 			$('.audio-3, .droppable.three, .onthird').css('margin-left','600px');
 			$('.droppable.two .magnet-area').css('display','none');
+			$('.nav-show:nth-child(2)').removeClass('on');
+			$('.nav-show:nth-child(1)').addClass('on');
 			Song=document.getElementById("song-1");
 		  break;
 		case 2:
@@ -142,6 +143,9 @@
 			$('.audio-3, .droppable.three, .onthird').css('margin-left','300px');
 			$('.droppable.two .magnet-area').css('display','block');
 			$('.droppable.three .magnet-area').css('display','none');
+			$('.nav-show:nth-child(1)').removeClass('on');
+			$('.nav-show:nth-child(3)').removeClass('on');
+			$('.nav-show:nth-child(2)').addClass('on');
 			Song=document.getElementById("song-2"); 
 		  break;
 		case 3:
@@ -149,6 +153,8 @@
 			$('.audio-2, .droppable.two, .onsecond').css('margin-left','-300px');
 			$('.audio-3, .droppable.three, .onthird').css('margin-left','0px');
 			$('.droppable.three .magnet-area').css('display','block');
+			$('.nav-show:nth-child(2)').removeClass('on');
+			$('.nav-show:nth-child(3)').addClass('on');
 			Song=document.getElementById("song-3");
 		  break;
 		}
