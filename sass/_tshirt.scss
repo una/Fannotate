@@ -1,0 +1,36 @@
+.tshirt-area{
+	@include transition-duration(1s);
+	width: 100%;
+	min-height: 300px;
+	display: block;
+	margin: 0 auto -300px;
+	float: left;
+	&.tshirt1 {
+		background: image-url('shirts/shirt1.png') 50% no-repeat;
+		background-size: 70%;
+	}
+	&.tshirt2 {
+		background: image-url('shirts/shirt2.png') 50% no-repeat;
+		background-size: 70%;
+	}
+	&.tshirt3 {
+		background: image-url('shirts/shirt3.png') 50% no-repeat;
+		background-size: 70%;
+	}
+}
+
+.tshirt.sample-name {
+	margin-top: 275px;
+	margin-bottom: -275px;
+}
+
+// .tshirt.voting {
+// 	position: absolute;
+// 	bottom: 30px;
+// 	height: 120px;
+// 	right: 0;
+// }
+
+// .tshirt.ribbon-shadows {
+// 	top: -10px;
+// }

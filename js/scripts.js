@@ -1,4 +1,4 @@
-// $(function(){
+$(function(){
 	// Turning things on
 	$(".all-thumbs").sortable().sortable('disable');
 	$('.sortToggle').on('click', allowSorting );
@@ -232,7 +232,7 @@
 		}
 	}
 
-// }); // end of SIAF
+}); // end of SIAF
 
 
 

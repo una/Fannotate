@@ -591,7 +591,7 @@ form.settings {
 /* line 17, ../sass/_audioentry.scss */
 #single-artist-tshirt {
   background: url('/images/backgrounds/tshirt_background.jpg?1382424732') 26% 0;
-  background-size: 110%;
+  background-size: 120%;
 }
 
 /* line 22, ../sass/_audioentry.scss */
@@ -1064,4 +1064,38 @@ form.settings {
 /* line 85, ../sass/_results.scss */
 .white-btn.wb1 {
   margin-top: 260px;
+}
+
+/* line 1, ../sass/_tshirt.scss */
+.tshirt-area {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  width: 100%;
+  min-height: 300px;
+  display: block;
+  margin: 0 auto -300px;
+  float: left;
+}
+/* line 8, ../sass/_tshirt.scss */
+.tshirt-area.tshirt1 {
+  background: url('/images/shirts/shirt1.png?1382424570') 50% no-repeat;
+  background-size: 70%;
+}
+/* line 12, ../sass/_tshirt.scss */
+.tshirt-area.tshirt2 {
+  background: url('/images/shirts/shirt2.png?1382424608') 50% no-repeat;
+  background-size: 70%;
+}
+/* line 16, ../sass/_tshirt.scss */
+.tshirt-area.tshirt3 {
+  background: url('/images/shirts/shirt3.png?1382424629') 50% no-repeat;
+  background-size: 70%;
+}
+
+/* line 22, ../sass/_tshirt.scss */
+.tshirt.sample-name {
+  margin-top: 275px;
+  margin-bottom: -275px;
 }
