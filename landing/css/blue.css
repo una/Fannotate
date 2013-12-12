@@ -1,0 +1,16 @@
+/* ######## 1 -  Slider Styles #########  */ 
+.flex-caption h3, .flex-caption2 h3 {  background-color:#68cbfc; }
+.flex-caption a { background:url(../img/arrow.png) no-repeat 90% 11px #68cbfc;   }
+.flex-caption2 a.fc1 {  background:url(../img/cart.png) no-repeat 90% 11px #68cbfc; }
+.flex-caption a.fc2 { background:url(../img/arrow2.png) no-repeat 90% 11px #68cbfc; }
+.flex-caption a.fc1 {  background:url(../img/arrow.png) no-repeat 90% 11px #68cbfc; }
+.slide-form input.button {  background:url(../img/arrow3.png) no-repeat 50% 8px #68cbfc;  }
+
+
+/* ######## 2 -  Global Styles #########  */ 
+p.title-spc { color:#68cbfc; }
+.b {  background-color:rgba(104,203,252,0.7); }
+.testi p.testio strong {   color:#68cbfc; }  
+.form-contact input.input-submit {  background-color:#68cbfc;  }
+.video {   background:url(../img/video-bg2.png) no-repeat; background-attachment:fixed; }
+ 
